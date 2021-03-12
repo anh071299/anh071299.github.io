@@ -1,0 +1,7 @@
+Tạo 3 trang HTML: index, about, contact
+	Nội dung trang inbdex trình bày tùy ý
+	Nội dung about giới thiệu bản thân
+	Nội dung contact thông tin liên hệ
+	Sử dụng thẻ hợp lý
+	Trang đầy đủ cấu trúc
+
