@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root{
+    --gutter:10px;
+    --primary-font: 'Open Sans', sans-serif;
+    --primary-color:#333;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.col-1 {
+    flex-basis: 8.33%;
+}
+.col-2{
+    flex-basis: 16.67%;
+}
+.col-3{
+    flex-basis: 25%;
+}
+.col-4 {
+    flex-basis: 33.33%;
+}
+.col-5{
+    flex-basis: 41.67%;
+}
+.col-6{
+    flex-basis: 50%
+}
+.col-7 {
+    flex-basis: 58.33%;
+}
+.col-8{
+    flex-basis: 66.67%
+}
+.col-9{
+    flex-basis: 75%;
+}
+.col-10 {
+    flex-basis: 83.33%;
+}
+.col-11{
+    flex-basis: 91.67%;
+}
+.col-12{
+    flex-basis: 100%;
+}
+[class*"col-"]{
+    padding: calc(var(--gutter)/2)
+}
+.flex{
+    display: flex;
+}
+.flex.column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex .j-center{
+    justify-content: center;
+}
+.flex.j-end{
+    justify-content:end;
+}
+.flex.j-between{
+    justify-content: space-between;
+}
+.flex.a-end{
+    align-items: end;
+}
+.flex.a-start{
+    align-items: flex-start;
+}
+.flex.a-center{
+    align-items: center;
+}
+.order-1{
+    
+    order: 1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
+.order-4{
+    order:4;
+}
+.order-5{
+    order: 5;
+}
+.order-6{
+    order: 6;
+}
+.order-7{
+    order:7;
+}
+.order-8{
+    order: 8;
+}
+.order-9{
+    order: 9;
+}
+.order-10{
+    order: 10;
+}
+.order-11{
+    order: 11;
+}
+.order-12{
+    order: 12;
+}

@@ -1,0 +1,43 @@
+.container{
+    /* khi su dung display flex mac dinh se co các thuoc tinh di kem */
+    background-color:lightcyan;
+    display: flex;
+    flex-direction: row;
+    /* flex-flow = flex-direction+flex-wrap */
+    height: 450px;
+
+    /* dồn các item về phía đó */
+    justify-content:center;
+    /* can chinh theo chieu main */
+    /* space-evenly: chia deu noi dung khoang cach hai dau va giua */
+    /* space-between: chia deu noi dung o giua */
+    /* space-around: khoanh cach 2 dau bang 1 nưa khoang trong o giua */
+    
+    align-items: flex-end;
+    /* can chinh noi dung theo chieu cross */
+    /* stretch: keo dai bang kich thuoc container */
+    /* baseline: sap xep theo chan noi dung */
+
+    flex-wrap: wrap;
+    /* sap xep phan tu khi kich thuoc vuot qua contianer */
+
+    align-content: stretch;
+}
+.item{
+    background-color: sandybrown;
+    width: 200px;
+    /* flex-grow: 1; */
+    /* flex-basic = width */
+    /* align-seft tu can chinh khong phu thuoc vao align-item cua cha */
+    /* flex-shrink:ti le co vao; =0 la khong co ; */
+
+}
+.item1{
+    order: 1;
+    align-self: flex-end;
+    /* flex-grow: 2; */
+ 
+    /* flex-grow: do lon no rong ra */
+}
+/* flex-item chi ap dung len cac phan tu co cha la flex
+sap xep item >0 ve cuoi <0 ve dau */

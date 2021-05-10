@@ -1,0 +1,30 @@
+.red{
+    color: red;
+}
+a[href="http://google.com"]{
+    color:rgb(88, 198, 202) ;
+    font-weight: bold;
+    font-size: 40px;
+}
+/*cung bo chon, xuat hien gan nhat thi dươc chon */
+h1{
+    color: greenyellow;
+}
+h1{
+    color: yellow;
+}
+.heading{
+    color: palevioletred;
+}
+.product{
+    display: inline-block;
+    width: 25%;
+    background-color: red;
+    height: 200px;
+    border:3px solid rebeccapurple;
+    width: calc(25% - 16px);
+    /* Tính toán  */
+}
+.products{
+    word-spacing: -1ch;
+}

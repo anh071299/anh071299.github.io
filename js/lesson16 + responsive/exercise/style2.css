@@ -1,0 +1,29 @@
+.item {
+  background-color: #4e46e8;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #d8ead2;
+}
+
+.top-bar .item {
+  height: 30px;
+  width: 60px;
+}
+.main {
+  background-color: #fde5cd;
+  padding: 0px 15px;
+}
+.main .item{
+    height: 500px;
+}
+
+@media (min-width: 768px){
+  .top-bar .item:nth-child(2){
+    justify-self: start;
+    background-color: pink;
+  }
+}

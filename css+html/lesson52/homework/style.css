@@ -1,0 +1,588 @@
+/* Thuộc tinh chung */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background: #fff;
+  color: #333;
+  margin: 0 auto;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+i {
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.row {
+  flex-direction: row;
+}
+
+.a-center {
+  align-items: center;
+}
+.container {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+  border: 0;
+
+  z-index: 1000;
+
+  background-color: white;
+}
+/* logo */
+.header-logo {
+  margin-right: 40px;
+}
+.header-logo .logo {
+  display: block;
+  height: 50px;
+}
+.header-logo .logo img {
+  width: 155.65px;
+}
+/* navbar-menu */
+.navbar-menu {
+  margin-right: 80px;
+}
+.menu li.menu-item {
+  margin: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 28px;
+}
+/* navbar-search */
+.navbar-search {
+  position: relative;
+  width: 320px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.navbar-search input {
+  display: block;
+  width: 100%;
+  height: 30px;
+
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+  border: 1px solid #ddd;
+
+  font-size: 13px;
+  outline: none;
+}
+.navbar-search input:focus {
+  border: 1px solid red;
+}
+.navbar-search i {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  color: #999;
+  cursor: pointer;
+}
+/* navbar-user */
+.navbar-user {
+  margin-left: auto;
+}
+.navbar-user-btn {
+  width: 40px;
+  height: 40px;
+
+  text-align: center;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+}
+.navbar-user .user-login {
+  font-size: 17px;
+
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+
+  box-shadow: 0 0 5px #ccc;
+}
+.navbar-user .light-control {
+  margin-right: 10px;
+
+  font-size: 25px;
+  background: #eee;
+}
+.navbar-user .light-control:hover{
+  background-color: #5b7dff;
+}
+/* main */
+
+.mt {
+  margin-top: 60px;
+}
+/* banner */
+.banner {
+  padding-top: 20px;
+}
+.sub-item {
+  width: 320px;
+  height: 90px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.left-content {
+  width: 980px;
+  margin-right: 10px;
+}
+.left-content .main-item {
+  margin-bottom: 10px;
+  height: 290px;
+}
+.left-content :nth-child(4) {
+  margin-right: 0;
+}
+.right-content {
+  width: 320px;
+}
+/* new episode */
+.tray {
+  margin-top: 20px;
+}
+.tray-title {
+  position: relative;
+  margin-bottom: 5px;
+  color: #d80f16;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.tray-title a {
+  cursor: pointer;
+}
+.tray-title a h1 {
+  display: unset;
+  margin: unset;
+  font: unset;
+}
+.tray-content {
+  position: relative;
+  overflow: hidden;
+}
+.tray-item-title i {
+  position: absolute;
+  top: 7px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+.tray-item {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 320px;
+  height: 180px;
+}
+.tray-item img {
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.tray-item-description {
+  height: 81px;
+  padding: 30px 15px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  color: #eee;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+.tray-item-title {
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  margin-bottom: 2px;
+}
+.tray-item-meta-infor {
+  font-size: 12px;
+}
+.tray-eps-name {
+  width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  text-align: left;
+}
+.tray-eps-view {
+  margin-left: auto;
+}
+.tray-item-play-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  box-shadow: 0 0 10px #fff;
+  padding-left: 10px;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+
+  text-align: center;
+  font-size: 50px;
+  line-height: 68px;
+
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 1;
+  display: none;
+}
+
+.tray-item a:hover .tray-item-play-button {
+  display: block;
+}
+/* Tin anime */
+.new-item {
+  width: 320px;
+  height: auto;
+
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  overflow: hidden;
+}
+.new-item-thumbnail {
+  width: 150px;
+  height: 89px;
+  position: relative;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.new-item-meta {
+  width: 160px;
+  height: 89px;
+  overflow: hidden;
+}
+.new-item-title {
+  font-size: 16px;
+}
+/* video */
+.video-item {
+  height: 180px;
+  width: 320px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.video-item-thumbnail {
+  height: 180px;
+  width: 100%;
+}
+.video-item-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: none;
+  margin-top: 5px;
+
+  padding: 30px 10px 10px;
+
+  color: #fff !important;
+
+  font-size: 15px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.video-item-play-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  padding-left: 5px;
+  border: 2px solid hsla(0, 0%, 100%, 0.65);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+
+  line-height: 44px;
+  font-size: 25px;
+
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+.video-item-duration {
+  top: 23px;
+  left: 60px;
+  position: absolute;
+
+  padding: 0 5px;
+  border-radius: 2px;
+  border-left: 1px solid #fff;
+
+  font-size: 11px;
+
+  color: #fff;
+
+  text-shadow: 0 0 10px #000;
+}
+/* truyen trạnh */
+.manga-item {
+  width: 210px;
+  height: 315px;
+  margin-right: 10px;
+  position: relative;
+}
+.manga-item-title {
+  position: absolute;
+  margin-top: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 30px 10px 10px;
+  max-height: none;
+
+  color: #fff !important;
+
+  font-size: 15px;
+  line-height: 20px;
+
+  overflow: hidden;
+}
+.manga-item-infor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 10px;
+
+  color: #fff;
+
+  font-size: 13px;
+  text-shadow: 0 0 15px #000;
+}
+
+.manga-item-label {
+  width: 60px;
+  padding: 0 5px;
+  border: 1px solid;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 13px;
+  text-shadow: 0 0 15px #000;
+}
+.new-item-genre {
+  margin-bottom: 5px;
+  padding: 2px 8px;
+  background: #d80f16;
+  display: table;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.genre-6 {
+  background-color: rgba(63, 81, 181, 0.7);
+}
+.genre-1 {
+  background-color: rgba(243, 56, 74, 0.7);
+}
+/* bộ sưu tập */
+.collection-item {
+  position: relative;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 320px;
+}
+/* hôm nay xem gì */
+.tray-film-update {
+  position: absolute;
+  left: 90px;
+  right: 10px;
+  opacity: 0;
+  display: none;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tray-item:hover .tray-film-update {
+  opacity: 1;
+  display: block;
+
+  top: 18px;
+  padding: 5px 10px 2px;
+}
+/* bảng xếp hạng */
+.rank-item {
+  position: relative;
+  margin-bottom: 10px;
+  width: 210px;
+  height: 95px;
+  margin-right: 10px;
+
+  overflow: hidden;
+
+  padding-top: 10px;
+
+  color: #fff;
+}
+.bg-1 {
+  background: linear-gradient(
+    -180deg,
+    rgba(244, 67, 54, 0.9),
+    rgba(244, 67, 54, 0.7)
+  );
+}
+.bg-2 {
+  background: linear-gradient(
+    -180deg,
+    rgba(156, 39, 176, 0.9),
+    rgba(156, 39, 176, 0.7)
+  );
+}
+.bg-3 {
+  background: linear-gradient(
+    -180deg,
+    rgba(63, 81, 181, 0.9),
+    rgba(63, 81, 181, 0.7)
+  );
+}
+.bg-4 {
+  background: linear-gradient(
+    -180deg,
+    rgba(0, 150, 136, 0.9),
+    rgba(0, 150, 136, 0.7)
+  );
+}
+.bg-5 {
+  background: linear-gradient(
+    -180deg,
+    rgba(255, 193, 7, 0.9),
+    rgba(255, 193, 7, 0.7)
+  );
+}
+.bg-6 {
+  background: linear-gradient(
+    -180deg,
+    rgba(140, 106, 73, 0.9),
+    rgba(140, 106, 73, 0.7)
+  );
+}
+.rank-item-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.rank-item-top {
+  position: absolute;
+  top: auto;
+  bottom: 5px;
+  right: 5px;
+  width: auto;
+  height: auto;
+  text-align: right;
+  line-height: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  border-radius: 100%;
+  background: none;
+}
+.rank-item-meta {
+  width: 190px;
+  color: #fff;
+  padding-left: 5px;
+}
+.rank-item-title {
+  max-height: 40px;
+  margin-top: -3px;
+  overflow: hidden;
+  color: #fff;
+}
+.rank-item-views,
+.rank-item-update {
+  font-size: 12px;
+  color: #fff;
+}
+.more {
+  clear: both;
+  width: 100px;
+  margin: 0 auto;
+  padding: 6px 12px;
+  text-align: center;
+  border-radius: 2px;
+  background: #d80f16;
+  cursor: pointer;
+  user-select: none;
+}
+.more a{
+  color: #fff;
+}

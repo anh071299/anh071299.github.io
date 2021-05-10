@@ -1,0 +1,41 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color:pink;
+}
+
+div.relative{
+    background-color: orange;
+    position: relative;
+    top:40px;
+    left: 50px;
+    z-index: -1;
+}
+.absolute{
+    background-color: green;
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    left: 100px;
+    /* neu khong co phan tu cha se can theo khung nhin man hinh
+    neu co phan tu cha thi se can theo phan tu cha(phan tu gan nhat chua no) */
+}
+.grandparents{
+    position: relative;
+    background-color: red;
+    height: 200px;
+}
+.parent{
+    background: purple;
+    position: relative;
+}
+.fixed{
+    background-color:saddlebrown;
+    position: fixed;
+    z-index: -1;
+    top: 50px;
+    right: 50px;
+}
+
+/* chieu sau phan tu mac dinh la :0 
+Cai nao co z-index nho hon se bi de */

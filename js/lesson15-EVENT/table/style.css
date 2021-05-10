@@ -1,0 +1,7 @@
+td,th{
+    border: 2px solid pink;
+}
+table{
+    border-collapse: collapse;
+    font-size: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Chuyển đổi nhiệt độ</h3>
+    <form action="" name="converter">
+      <div>
+        <label for="celcius"
+          ><input
+            type="radio"
+            name="from"
+            id="celcius"
+            value="celcius"
+          />°C</label
+        >
+        <label for="farenheit"
+          ><input
+            type="radio"
+            name="from"
+            id="farenheit"
+            value="farenheit"
+          />°F</label
+        >
+        <label for="kevin"
+          ><input type="radio" name="from" id="kevin" value="kevin" />°K</label
+        >
+        <input type="number" name="temp" id="degree" />
+      </div>
+
+      <div>
+        <label for="celcius"
+          ><input
+            type="radio"
+            name="to"
+            id="celcius"
+            value="celcius"
+          />°C</label
+        >
+        <label for="farenheit"
+          ><input
+            type="radio"
+            name="to"
+            id="farenheit"
+            value="farenheit"
+          />°F</label
+        >
+        <label for="kevin"            
+          ><input type="radio" name="to" id="kevin" value="kevin" />°K</label
+        >
+        <input type="text" name="result" id="degree" readonly />
+      </div>
+
+      <button type="button" name="btnCovert">Convert</button>
+    </form>
+    <script src="scrpit.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,18 @@
+table{
+    border-collapse: collapse;
+    caption-side: bottom;
+    table-layout: fixed;
+    /* empty-cells: hide; */
+}
+table,tr,td,th{
+    width: 100px;
+    border: 2px solid black;
+    text-align: center;
+}
+/* odd: le, even: chan; 2n+1 tu hang 1, n chay tu 0 */
+tbody tr:nth-child(2n+1){
+    background-color: blue;
+}
+tbody td:empty{
+    background-color: red;
+}

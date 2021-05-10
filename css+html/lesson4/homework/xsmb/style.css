@@ -1,0 +1,45 @@
+*{
+    margin: 0 auto;
+}
+body{
+    font-family: "Arial, Tahoma, Helvetica",sans-serif;
+    line-height: 1.125em;
+   
+}
+table{
+    width: 40%;
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+tbody>tr:nth-of-type(3n+4) {
+    background: #f3f3f3;
+}
+.kqxs td{
+    padding: 10px 5px;
+    border: 1px solid #d9d3cb;
+    text-align: center;
+}
+.madb td b{
+    font-weight: bold;
+    color: #0505a7;
+}
+td.txt-giai{
+    width: 70px;
+    padding: 8px 2px;
+
+}
+td.red-txt{
+    color: #ed1c25;
+    font-size: 28px;
+}
+.fw{
+    font-weight: 700;
+}
+.number{
+    font-weight: bold;
+    font-size: 22px;
+}
+td.bg-yellow{
+    background: #fff2bc;
+}

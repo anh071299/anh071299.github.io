@@ -1,0 +1,42 @@
+:root {
+  --degrees: linear-gradient(90deg, red, blue, yellow, pink);
+  --degrees2: linear-gradient(-45deg, pink, cyan);
+  --cornor: linear-gradient(to top right, red, blue);
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-image: var(--degrees2);
+}
+/* .a{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform: rotateX(45deg);
+    /* n */
+img {
+  height: 500px;
+  width: 500px;
+  /* filter: blur(10px); */
+  /* transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: 1s; */
+  animation: spin 3s infinite linear;
+  /* nên để nhỏ hơn 1s */
+}
+img:hover{
+    width: 800px;
+}
+@keyframes spin{
+from{
+    transform: rotate(0);
+
+}
+to{
+    transform: rotate(1turn);
+}
+/* animate style */
+}
