@@ -1,37 +1,124 @@
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 /* header */
 /* top-header */
-.top-header{
-    text-transform: uppercase;
+.top-header {
+  text-transform: uppercase;
 }
-.r-header-top li{
-    display: inline-block;
-    position: relative;
+.top-header ul li {
+  display: inline-block;
+  position: relative;
 }
-.r-header-top li a, .top-header span{
+.top-header,
+.r-header-top li a {
+  color: #000;
+  font-size: 11px;
+  font-weight: 300;
+}
+.top-header span:not(:last-child) {
+  padding-right: 15px;
+}
+.r-header-top li:not(:last-child) {
+  padding-right: 15px;
+}
+.sub-menu {
+  display: none;
+  padding: 0;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 7%);
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: #fff;
+
+  z-index: 1;
+  transition: all 300ms ease;
+}
+.menu-lang:hover .menu-lang-selector {
+  display: block;
+}
+.top-menu {
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+.top-menu li {
+  position: relative;
+}
+.top-menu li a {
+  display: block;
+  padding: 20px 15px;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 0.8;
+
+  color: #000;
+}
+.header a:hover {
+  color: #ff5838;
+}
+.top-sub-menu {
+  width: 220px;
+}
+.icon{
     color: #000;
-    font-size: 11px;
-    font-weight: 300;
+
+    display: inline-block;
+    padding: 10px; 
+    
+    position: relative;
+
+    font-size: 18px;
+    
 }
-.top-header span:not(:last-child){
-    padding-right: 15px;
-}
-.r-header-top li:not(:last-child){
-    padding-right: 15px;
-}
-.menu-lang-selector{
-    display: none;
-}
-.menu-lang:hover  .menu-lang-selector{
-    display: block;
+.itemCount{
     position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
+    top: 0;
+    right: 0;
+
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+
+    background-color: #ff5353;
+    color: #fff;
+    
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+}
+@media (min-width: 576px) {
+  .top-menu li a {
+    padding: 20px 35px;
+  }
+}
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none;
+  }
+  .top-menu {
+    position: static;
+    display: inline-block;
+    width: auto;
+  }
+  .top-menu li a {
+    padding: 40px 15px;
+  }
+  .top-menu li:first-child:hover .top-sub-menu {
+    display: block;
+  }
+  .top-menu li .top-sub-menu a {
+    padding: 20px;
+  }
 }
