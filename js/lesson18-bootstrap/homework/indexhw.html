@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello-World</title>
+    <title>Hello, world!</title>
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -14,11 +14,21 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="stylehw.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <!-- top-header -->
       <div class="top-header text-uppercase">
@@ -51,9 +61,7 @@
           <a href="indexhw.html" class="logo">
             <img src="images/logo.png" alt="logo" />
           </a>
-          <a href="javascript:void(0);" class="menu-toggle"
-            ><i class="bi bi-list"></i>
-          </a>
+          <a class="menu-toggle"><i class="bi bi-list icon"></i> </a>
           <ul class="navbar-nav top-menu text-uppercase">
             <li>
               <a href="#">Home</a>
@@ -81,12 +89,615 @@
         </nav>
       </div>
     </header>
-    
+    <!-- banner-fs -->
+    <section class="banner-fs">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-md-1">
+            <div class="banner-img"><img src="images/ban-1.png" alt="" /></div>
+          </div>
+          <div class="col-md-6">
+            <div class="banner-cont">
+              <span class="sub-title">Ultimatic Collection</span>
+              <h1 class="title">Complete Women Fashion Here</h1>
+              <a href="#" class="shopBtn">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- feature -->
+    <section class="featured-product">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sec-heading">
+              <h3 class="sec-title">Featured Product</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/1.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/2.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/3.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner-sd -->
+    <section class="banner-sd">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="banner-cont">
+              <h1 class="title">50% off</h1>
+              <h4>All Women's Collection</h4>
+              <a href="#" class="shopBtn">Shop now</a>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1">
+            <div class="banner-img"><img src="images/ban-2.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- most-product -->
+    <section class="most-product">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sec-heading">
+              <h3 class="sec-title">Featured Product</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-3">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/4.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/5.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/6.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/7.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- trending-product -->
+    <section class="trending-product">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sec-heading">
+              <h3 class="sec-title">Trending Product</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/8.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/9.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/10.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/11.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/12.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/13.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/14.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-item">
+              <div class="feature-thumb">
+                <img src="images/product/15.jpg" alt="product1" />
+                <div class="thumb-link">
+                  <a href="" class="icon"><i class="bi bi-eye"></i></a
+                  ><a href="" class="icon"><i class="bi bi-heart"></i></a>
+                  <a href="" class="icon"><i class="bi bi-cart4"></i></a>
+                </div>
+              </div>
+              <div class="product-cont">
+                <h5 class="product-name"><a href="#">Red Women Purses</a></h5>
+                <div class="rating">
+                  <a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a
+                  ><a href=""><i class="bi bi-star"></i></a>
+                </div>
+                <p class="price">$35</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog -->
+    <section class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sec-heading">
+              <h3 class="sec-title">SILON JOURNAL</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="post-item">
+              <img src="images/blog/1.jpg" alt="blog1" />
+              <div class="blog-cont">
+                <a href="" class="post-meta date">07 July, 2019</a>
+                <h3 class="post-title">
+                  Were divided land his creature which have evening subdue
+                </h3>
+                <div class="meta-tag">
+                  <a href="" class="post-meta"
+                    ><i class="bi bi-box"></i>Women Fashion</a
+                  ><a href="" class="post-meta"
+                    ><i class="bi bi-chat-left"></i>2 Comments</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="post-item">
+              <img src="images/blog/2.jpg" alt="blog1" />
+              <div class="blog-cont">
+                <a href="" class="post-meta date">07 July, 2019</a>
+                <h3 class="post-title">
+                  Were divided land his creature which have evening subdue
+                </h3>
+                <div class="meta-tag">
+                  <a href="" class="post-meta"
+                    ><i class="bi bi-box"></i>Women Fashion</a
+                  ><a href="" class="post-meta"
+                    ><i class="bi bi-chat-left"></i>2 Comments</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="post-item">
+              <img src="images/blog/3.jpg" alt="blog1" />
+              <div class="blog-cont">
+                <a href="" class="post-meta date">07 July, 2019</a>
+                <h3 class="post-title">
+                  Were divided land his creature which have evening subdue
+                </h3>
+                <div class="meta-tag">
+                  <a href="" class="post-meta"
+                    ><i class="bi bi-box"></i>Women Fashion</a
+                  ><a href="" class="post-meta"
+                    ><i class="bi bi-chat-left"></i>2 Comments</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- follow -->
+    <section class="follow">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sec-heading">
+              <h3 class="sec-title">Featured product</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="follow-item">
+              <img src="images/follow/1.jpg" alt="follow1" />
+              <div class="hover">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="follow-item">
+              <img src="images/follow/2.jpg" alt="follow2" />
+              <div class="hover">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="follow-item">
+              <img src="images/follow/3.jpg" alt="follow3" />
+              <div class="hover">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="follow-item">
+              <img src="images/follow/4.jpg" alt="follow4" />
+              <div class="hover">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-top">
+        <div class="row">
+          <div class="col-sm-6 col-md-2">
+            <div class="f-col">
+              <h4 class="f-col-title">About us</h4>
+              <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Become a supplier</a></li>
+                <li><a href="#">Investor relations</a></li>
+                <li><a href="#">Our devices</a></li>
+                <li><a href="#">Affiliate program</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="offset-md-1 col-sm-6 col-md-2">
+            <div class="f-col">
+              <h4 class="f-col-title">About us</h4>
+              <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Become a supplier</a></li>
+                <li><a href="#">Investor relations</a></li>
+                <li><a href="#">Our devices</a></li>
+                <li><a href="#">Affiliate program</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="offset-md-1 col-sm-6 col-md-2">
+            <div class="f-col">
+              <h4 class="f-col-title">About us</h4>
+              <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Become a supplier</a></li>
+                <li><a href="#">Investor relations</a></li>
+                <li><a href="#">Our devices</a></li>
+                <li><a href="#">Affiliate program</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="offset-md-1 col-sm-6 col-md-3">
+            <div class="f-col">
+              <div class="f-col-app">
+                <h4 class="f-col-title">experience app on mobile</h4>
+                <div class="app-btn">
+                  <a href="#" class="google-play"><i class="fa fa-android"></i><p><span>get it on</span>Google Play</p> </a>
+                  <a href="#" class="app-store"><i class="fa fa-apple"></i><p><span>get it on</span>App Store</p> </a>
+                </div>
+              </div>
+              <div class="f-col-social">
+                <h4 class="f-col-title">ONLINE SHOPPING</h4>
+                <div class="social-media">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="copyright">Copyright © 2019 <a href="#">themeies.com</a>. All rights reserved.</p>
+      </div>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
       crossorigin="anonymous"
     ></script>
+    <script src="scriptshw.js"></script>
   </body>
 </html>
