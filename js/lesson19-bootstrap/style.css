@@ -1,0 +1,23 @@
+/* .logo-img img{
+    height: 80px;
+    width: 80px;
+}
+form{
+ width: 500px;
+}
+.col-12 input{
+    width: 100%;
+}
+.col-4 select{
+    width: 100%;
+} */
+form.needs-validation{
+    margin-top: 120px;
+}
+input.form-control{
+    border-bottom: 1px solid #ced4da;
+    border-top: none;
+    border-right: none;
+    border-left:  none;
+
+}
