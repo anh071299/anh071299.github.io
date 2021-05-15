@@ -80,7 +80,8 @@ function checkPassword() {
     "Vui lòng điền mật khẩu";
   password.classList.add("is-invalid");
   return false;
-  } else if (!value.match(validRegex)) {
+  } else 
+  if (!value.match(validRegex)) {
     error.textContent =
       "Mật khẩu phải chứa ít nhất 1 chữ hoa, 1 chữ thường, 1 chữ số, chứa ít nhất 1 ký tự đặc biệt, chứa ít nhất 8 ký tự";
     password.classList.add("is-invalid");
@@ -120,7 +121,9 @@ submit.addEventListener("click", function (ev) {
     // !checkConPassword()
   ) {
     ev.preventDefault();
-    return false;
+
   }
-  return true;
+  else{
+    
+  }
 });
