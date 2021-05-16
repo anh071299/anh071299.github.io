@@ -8,8 +8,12 @@
     max-width: 1060px !important;
   }
 }
-.ok:hover{
-  color: burlywood;
+.bg-header-scroll{
+  background-color: rgb(98,98,98,0.5);
+}
+.padding-scroll{
+  padding-top: 0!important;
+  padding-bottom: 0!important;
 }
 input:focus{
   outline: none;
@@ -27,6 +31,13 @@ a:hover {
   color: burlywood !important;
 }
 /* header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5 ;
+}
 header .navbar {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -52,6 +63,11 @@ header .nav-link {
 .nav-item:not(:first-child) {
   padding-left: 120px;
 }
+main{
+  margin-top:206px ;
+  z-index: 1;
+}
+/* first-post */
 .post-content {
   padding: 100px 80px;
 }
