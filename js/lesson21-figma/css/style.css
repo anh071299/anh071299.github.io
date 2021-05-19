@@ -1,0 +1,119 @@
+@font-face {
+  font-family: CicularStdMedium;
+  src: url(../fonts/Circular\ Std\ Font.otf);
+}
+@font-face {
+  font-family: SofiaProMedium;
+  src: url(../fonts/Sofia\ Pro\ Medium\ Az.otf);
+}
+@font-face {
+  font-family: SofiaProBold;
+  src: url(../fonts/Sofia\ Pro\ Bold\ Az.otf);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 1440px;
+  max-width: 1440px;
+}
+.container > .row {
+  --bs-gutter-x: 20px;
+}
+/* slidebar */
+.slidebar-wrapper {
+  width: 17.5%;
+}
+.logo{
+    margin-bottom: 57px;
+}
+.logo img{
+    max-width: 100%;
+    width: unset;
+}
+.slidebar {
+  height: 100%;
+  padding-top: 50px;
+}
+.main-wrapper {
+  width: auto;
+}
+
+.main-wrapper .row {
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 20px;
+}
+.nav-link.active{
+    border-bottom: 2px solid black;
+}
+.nav-link img {
+  display: inline-block;
+  width: 24px;
+  margin-right: 10px;
+}
+.nav-header {
+  font-family: SofiaProBold;
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+.nav-link {
+  font-family: SofiaProMedium;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+.icon-wrapper {
+  width: 45px;
+  height: 45px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+.help-center {
+  margin-top: auto;
+}
+/* menu */
+.menu-list {
+  margin-left: 406px;
+}
+.menu-list a.nav-link {
+  color: black !important;
+
+  font-size: 17px;
+}
+.menu-list .nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.user-list {
+  margin-left: 47px;
+}
+.bi.bi-search {
+  margin-right: 17px;
+}
+.search {
+  width: 98px;
+  font-size: 14px;
+  border: none;
+}
+/* main */
+.main-item{
+    display: block;
+    position: relative;
+}
+.like-btn{
+    position: absolute;
+    top: 20px;
+    right: 21px;
+
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+
+    line-height: 38px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+}

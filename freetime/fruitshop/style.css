@@ -1,0 +1,27 @@
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.top-header{
+    color:   #FFFFFF;
+    background-color: #f69946;
+}
+.top-header a{
+    color: inherit;
+}
+ul.social-contact li a{
+    display: inline-block;
+    text-align: center;
+
+    margin-right: 10px;
+    transition: all .3s;
+    width: 29px;
+    height: 29px;
+}
+ul.social-contact li a:hover{
+    background-color: blue;
+    border-radius: 50%;
+}
