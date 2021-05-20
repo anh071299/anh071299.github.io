@@ -1,0 +1,391 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1109px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1109px;
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.header {
+  background-image: url(images/Bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h4{
+  font-size: 18px;
+  line-height: 22px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*header */
+.header {
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.header a {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: inherit;
+  cursor: pointer;
+  color: #ffffff;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(213, 32, 71, 0.8) 0%,
+    rgba(238, 61, 27, 0.8) 100%
+  );
+  z-index: -1;
+}
+/* logo */
+.logo-icon {
+  margin-right: 7px;
+}
+.logo-title {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* header-menu */
+.header-menu {
+  padding-top: 50px;
+}
+/* user */
+a.btn {
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+a.loginBtn {
+  border: 1px solid #ffffff;
+  padding: 12px 29px;
+}
+.langDropdown .dropdown-toggle::after {
+  color: #ffffff;
+}
+.langIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  margin-right: 11px;
+}
+/* header-content */
+.header-content {
+  padding-top: 187px;
+  padding-bottom: 187px;
+}
+.header-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  margin-bottom: 39px;
+}
+.header-sub-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+
+  margin-bottom: 39px;
+}
+a.signUpBtn {
+  padding: 17px 53px;
+  background-color: #ffffff;
+  color: #ed4c5c;
+}
+/* video */
+.video {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  color: #000;
+}
+.sec-introduce {
+  padding-right: 85px;
+  padding-top: 36px;
+}
+
+.sec-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+
+  margin-bottom: 24px;
+}
+.sec-about {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+
+  text-align: justify;
+}
+
+.learn-more {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #ed4c5c;
+}
+.video-play {
+  position: relative;
+}
+.playBtn {
+  position: absolute;
+  top: calc(50% - 33px);
+  left: -33px;
+
+  width: 66px;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  display: inline-block;
+  background: #ed4c5c;
+  border-radius: 50%;
+
+  font-size: 18px;
+  color: #ffffff;
+}
+/* features */
+.features .row {
+  --bs-gutter-x: 30px;
+}
+.features {
+  padding-top: 63px;
+  padding-bottom: 124px;
+  background-color: #fafafa;
+}
+.features .sec-title {
+  margin-bottom: 79px;
+}
+.feature-item {
+  position: relative;
+}
+.feature-item img {
+  max-width: 100%;
+}
+.feature-item-content {
+  position: absolute;
+  top: 157px;
+  left: calc((100% - 293px) / 2);
+  display: inline-block;
+
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  width: 293px;
+  border-radius: 8px;
+  padding: 33px 20px 25px 20px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+.card-title {
+  font-weight: bold;
+
+  color: #000;
+
+  margin-bottom: 20px;
+}
+.card-about {
+  font-size: 12px;
+  line-height: 150%;
+  color: #000;
+}
+.read-more {
+  font-size: 12px;
+  line-height: 150%;
+
+  color: #ed4c5c;
+}
+/* Technology */
+.technology {
+  padding-top: 63px;
+  padding-bottom: 104px;
+}
+.technology .row {
+  --bs-gutter-x: 30px;
+}
+.technology .sec-title {
+  margin-bottom: 53px;
+}
+.tech-item {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.tech-number-wrap {
+  position: relative;
+  display: inline-block;
+}
+.tech-number {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.tech-item-icon {
+  position: absolute;
+  top: 50%;
+}
+
+.tech-item-cont {
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #000000;
+  margin-top: 10px;
+}
+/* app-download */
+.app-download {
+  color: #ffffff;
+  background-color: #ed4c5c;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.list-app {
+  margin-top: 40px;
+}
+.list-app li a {
+  margin-right: 23px;
+}
+/* slider */
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-carousel .my-card {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+
+  display: inline-block;
+  border: 15px;
+
+  transition: 1s;
+}
+
+.card-carousel .my-card.active img {
+  width: 445px;
+  height: 311px;
+}
+.card-carousel .my-card.active {
+  z-index: 3;
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+.card-carousel .my-card.prev {
+  position: absolute;
+  left: 0;
+}
+.card-carousel .my-card.my-card.next {
+  position: absolute;
+  right: 0;
+}
+.card-carousel .my-card.prev,
+.card-carousel .my-card.next {
+  z-index: 2;
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+.card-carousel .my-card.prev img,
+.card-carousel .my-card.next img {
+  width: 383px;
+  height: 267px;
+}
+/* contact */
+.contact {
+  padding-top: 117px;
+  padding-bottom: 78px;
+}
+form.row {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 24px;
+}
+input.form-control, select.form-select {
+  font-size: 16px;
+  line-height: 19px;
+
+  color: rgba(19, 39, 67, 0.5);
+
+  border-radius: 6px;
+  margin: 0;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 31px;
+}
+.submitBtn {
+  padding: 17px 34px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background: #ed4c5c;
+  border: 1.5px solid #ed4c5c;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+/* footer */
+.footer{
+  padding-top: 85px;
+  padding-bottom: 85px;
+  margin-top: 45px;
+  color: #000;
+}
+.footer .row{
+  --bs-gutter-x: 30px;
+}
+.footer-col-title{
+  font-weight: bold;
+  margin-bottom: 33px;
+}
+.footer-col-cont{
+  font-size: 12px;
+}
+.copy-right{
+  margin-top: 141px;
+}
+.footer-col-cont ul li a{
+  color: #000;
+  font-size: 12px;
+  line-height: 14px;
+}
+.footer-email{
+  margin-bottom: 11px;
+}
+.footer-phone{
+  margin-bottom: 20px;
+}
+.f-social-list a{
+  margin-right: 13px;
+}
