@@ -96,6 +96,7 @@ function onDelete(td) {
     students.splice(studentNo - 1, 1);
     
     studentTbl.deleteRow(row.rowIndex);
+    console.log(row);
     document.getElementById("tbody").innerHTML = renderStudents(students);
   }
 }
