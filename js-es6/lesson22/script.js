@@ -61,6 +61,7 @@ let students = [
 
 // let oldPerson = students.reduce((total,{age})=> (total + age),0);
 // console.log(oldPerson);
+
 let studentTbl = document.getElementById("studentTbl");
 let renderStudents = (students) =>
   students
@@ -94,7 +95,6 @@ function onDelete(td) {
     let row = td.parentElement.parentElement;
     let studentNo = row.cells[0].innerHTML;
     students.splice(studentNo - 1, 1);
-    
     studentTbl.deleteRow(row.rowIndex);
     console.log(row);
     document.getElementById("tbody").innerHTML = renderStudents(students);
@@ -103,8 +103,7 @@ function onDelete(td) {
 
 // add
 function onFormSubmit() {
- 
-  if(checkValid()){
+  if (checkValid()) {
     let student = readForm();
     if (selectedRow == null) {
       insertNewStu(student);
@@ -152,21 +151,21 @@ function updateRecord(student) {
 }
 // valid
 
-function checkValid(){
+function checkValid() {
   let name = document.getElementById("name");
   let age = document.getElementById("age");
   let email = document.getElementById("email");
-  if(name.value== ""){
+  if (name.value == "") {
     window.alert("Please enter your name.");
     name.focus();
     return false;
   }
-  if(age.value == ""){
+  if (age.value == "") {
     window.alert("Please enter your age");
     age.focus();
     return false;
   }
-  if(email.value == ""){
+  if (email.value == "") {
     window.alert("Please enter your email");
     email.focus();
     return false;
@@ -174,3 +173,58 @@ function checkValid(){
   return true;
 }
 
+
+let name = studentTbl.getElementsByTagName("th")[1];
+name.setAttribute("onclick", "sortTable(1)");
+let age = studentTbl.getElementsByTagName("th")[2];
+age.setAttribute("onclick", "sortTable(2)");
+let email= studentTbl.getElementsByTagName("th")[3];
+email.setAttribute("onclick", "sortTable(3)");
+
+function sortTable(n) {
+  let switching,
+    shouldSwitch,
+    x,
+    y,
+    dir,
+    switchcount = 0;
+  dir = "asc";
+  let typeOfSort = studentTbl.getElementsByTagName("th")[n].className;
+  console.log(typeOfSort);
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = studentTbl.rows;
+    for (i = 1; i < rows.length - 1; i++) {
+      shouldSwitch = false;
+      if (typeOfSort == "sortNumber") {
+        x = parseInt(rows[i].cells[n].innerHTML);
+        y = parseInt(rows[i + 1].cells[n].innerHTML);
+      } else {
+        x = rows[i].cells[n].innerHTML.toUpperCase();
+        y = rows[i + 1].cells[n].innerHTML.toUpperCase();
+      }
+      if (dir == "asc") {
+        if (x > y) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x < y) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      studentTbl.tBodies[0].insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
