@@ -4,6 +4,14 @@
 //     sum += i;
 // }
 // console.log("Tổng các số 0 - 100 là: " + sum);
+let sum = ()=>{
+    let tong = 0;
+    for(let i =0; i<=100; i++){
+    tong+=i;
+    }
+    console.log(tong);
+}
+sum();
 
 //Bài 2: Tính tổng số lẻ từ 0 -> 100
 // let sum = 0;

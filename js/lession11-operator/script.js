@@ -104,15 +104,15 @@
 // let b = {x:1, y:2};
 // console.log(isEqual(a,b));
 //
-function intersection(obj1, obj2){
-    let objc = {};
-    for(let k in obj1){
-        if(k in obj2 || obj1[k] == obj2[k]){
-            objc[k] = obj1[k];
-        }
-    }
-    return objc;
-}
-let a = {x:1, y:2};
-let b = {x:1, z:2, y:2};
-console.log(intersection(a,b));
+// function intersection(obj1, obj2){
+//     let objc = {};
+//     for(let k in obj1){
+//         if(k in obj2 || obj1[k] == obj2[k]){
+//             objc[k] = obj1[k];
+//         }
+//     }
+//     return objc;
+// }
+// let a = {x:1, y:2};
+// let b = {x:1, z:2, y:2};
+// console.log(intersection(a,b));
