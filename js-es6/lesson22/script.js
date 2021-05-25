@@ -93,8 +93,8 @@ function onDelete(td) {
   if (confirm("Are you sure to delete this student?")) {
     let row = td.parentElement.parentElement;
     let studentNo = row.cells[0].innerHTML;
-
-    console.log(studentNo);
+    students.splice(studentNo - 1, 1);
+    
     studentTbl.deleteRow(row.rowIndex);
     document.getElementById("tbody").innerHTML = renderStudents(students);
   }
