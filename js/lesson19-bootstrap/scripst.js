@@ -114,11 +114,11 @@ function checkPassword() {
 let submit = document.getElementById("submitBtn");
 submit.addEventListener("click", function (ev) {
   if (
-    !checkName() &&
-    !checkEmail() &&
-    !checkPhone() &&
+    !checkName() ||
+    !checkEmail() ||
+    !checkPhone() ||
     !checkPassword() 
-    // !checkConPassword()
+    || !checkConPassword()
   ) {
     ev.preventDefault();
 
