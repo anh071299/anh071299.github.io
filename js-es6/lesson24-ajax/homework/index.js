@@ -16,10 +16,12 @@ xhr.onload = (e) => {
     .map((us) => {
       return `  <div class="col">
     <div class="user">
-        <h4 class="user-name"> ${us.first_name}  ${us.last_name}
-        </h4>
-        <p class="user-email">${us.email}</p>
-        <img src="${us.avatar}" alt="userImg">
+        <a href="single.html?userId=${us.id}">
+          <h4 class="user-name"> ${us.first_name}  ${us.last_name}
+          </h4>
+          <p class="user-email">${us.email}</p>
+          <img src="${us.avatar}" alt="userImg">
+        </a>
     </div>
 </div>`;
     })
