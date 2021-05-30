@@ -1,0 +1,19 @@
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+.color{
+    background-color: rgb(243, 240, 240);
+}
+.color-main{
+    height: 150px;
+}
+.color-infor{
+   margin-top: 1em;
+}
+.color-year{
+   color: #fff;
+}
+

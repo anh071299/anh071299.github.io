@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="style.css">
+  <body>
+    <div class="container">
+      <div class="row">
+          <div class="col-2 ms-auto me-auto mt-5">
+              <div class="color">
+                <div class="color-main"><h1 class="color-year"></h1></div>
+                <div class="color-infor">
+                  <h4></h4>
+                  <span class="color-value"></span>
+                </div>
+              </div>
+      </div>
+      </div>
+    </div>
+    <script>
+      const url = new URL(window.location.href);
+
+
+      const colorId = url.searchParams.get("colorId");
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.responseType = "json";
+
+      let method = "GET";
+      let uri = `https://reqres.in/api/unknown/${colorId}`;
+
+      xhr.open(method, uri);
+
+      xhr.onload = () => {
+        let color = xhr.response.data;
+        color = ` <div class="color-main" style = "background-color:${color.color}"><h1 class="color-year">${color.year}</h1></div>
+        <div class="color-infor">
+            <h4>${color.name}</h4>
+                  <span class = "color-value">${color.pantone_value}</span>
+        </div>`;
+
+        document.querySelector(".color").innerHTML = color;
+      };
+      xhr.send(null);
+    </script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
