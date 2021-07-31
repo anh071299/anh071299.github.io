@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header">
+    <!-- header -->
+    <div class="header">
         <div class="header__top">
             <div class="container">
                 <div class="header__top-flex d-flex justify-content-between">
@@ -29,18 +31,18 @@
         <div class="header__navbar">
             <div class="container">
                 <div class="header__navbar-flex d-flex justify-content-between align-items-center">
-                    <div class="header__navbar-menu d-flex text-uppercase">
+                    <div class="main__navbar-menu d-flex text-uppercase">
                         <ul class="d-flex">
                             <li>
-                                <a href="#" class="header__navlink--active">
-                                    <span class="header__icon">
+                                <a href="#" class="main__navlink--active">
+                                    <span class="main__navbar-icon">
                                         <i class="sprite sprite-home"></i>
                                     </span>
                                     <span>Trang chủ</span>
                                 </a>
                             </li>
                             <li><a href="#">sự kiện</a></li>
-                            <li><a href="#">doanh nghiệp</a></li>
+                            <li><a href="category.html">doanh nghiệp</a></li>
                             <li><a href="#">tiếp thị</a></li>
                             <li><a href="#">kinh tế</a></li>
                             <li><a href="#">xã hội</a></li>
@@ -58,13 +60,15 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- main -->
     <div class="main">
         <div class="container">
             <div class="main__top-news d-flex">
                 <div class="main__hot-category-news">
                     <div class="main__hc-news-item">
-                        <a href="#" class="main__hc-news-category main__news-category text-uppercase">doanh nghiệp</a>
+                        <a href="category.html" class="main__hc-news-category main__news-category text-uppercase">doanh
+                            nghiệp</a>
                         <h3>
                             <a class="main__hc-news-title" href="#">T&T Group và Hành trình yêu thương: Khi niềm tin
                                 được sẻ chia thì hạnh phúc được
@@ -94,18 +98,19 @@
                         </h3>
                     </div>
                 </div>
-                <div class="main__hightlight-news">
+                <div class="main__hightlight-news main__hightlight-news-pcenter">
                     <a href="#" class="main__hl-news-img">
                         <img src="image/hightlight-news.jpg"
                             alt="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện &ldquo;bình thường mới&rdquo;">
                     </a>
                     <a href="#" class="main__news-category">xã hội</a>
+                    <h2><a href="#" class="main__hightlight-news-title">Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện "bình thường mới"</a></h2>
                     <p class="main__news-content-des">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu
                         tập
                         cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan đến dịch Covid-19. Cuộc họp đã
                         công bố xác nhận thêm</p>
                 </div>
-                <div class="main__hot-news">
+                <div class="main__hot-news main__hot-news-aside">
                     <div class="main__hot-news-item">
                         <h3>
                             <a href="#" class="main__hni-title">Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản
@@ -146,6 +151,7 @@
                     </div>
                 </div>
             </div>
+
             <ul class="main__dots-list">
                 <li class="main__dots-list-item"></li>
                 <li class="main__dots-list-item"></li>
@@ -153,14 +159,16 @@
                 <li class="main__dots-list-item"></li>
                 <li class="main__dots-list-item"></li>
             </ul>
+
             <div class="main__suggest-news">
                 <div class="main__aside-layout d-flex">
                     <div class="main__aside-layout-left">
-                        <div class="main__suggest-wrap-title d-flex">
+                        <div class="main__category-title-wrap d-flex">
                             <h3>
-                                <a class="main__suggest-wrap-name text-uppercase" href="">Tiếp thị</a>
+                                <a class="main__category-title-name text-uppercase" href="">Tiếp thị</a>
                             </h3>
-                            <ul class="main__suggest-wrap-nav d-flex justify-content-between align-items-center text-uppercase">
+                            <ul
+                                class="main__category-title-nav d-flex justify-content-between align-items-center text-uppercase">
                                 <li><a href="#">thương mại</a></li>
                                 <li><a href="#">văn hóa tiếp thị</a></li>
                                 <li><a href="#">hội nhập</a></li>
@@ -168,58 +176,56 @@
                             </ul>
                         </div>
                         <div class="main__grid-3-cols d-flex justify-content-between flex-wrap">
-                            <div class="main__grid-3-cols-item">
-                                <a href="#" class="main__item-3-cols-img">
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
                                     <img src="image/item-3-cols-img-1.jpg"
                                         alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
                                 </a>
-                                <h3><a href="#" class="main__item-3-cols-title">Quy hoạch băng tần cho hệ thống di động
+                                <h3><a href="#" class="main__item-cols-title">Quy hoạch băng tần cho hệ thống di động
                                         IMT… chưa phù hợp</a></h3>
                             </div>
-                            <div class="main__grid-3-cols-item">
-                                <a href="#" class="main__item-3-cols-img">
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
                                     <img src="image/item-3-cols-img-2.jpg"
                                         alt="Gam hồng thương mại điện tử trong dịch Covid-19">
                                 </a>
-                                <h3><a href="#" class="main__item-3-cols-title"><span class="main__title-icon"><i
+                                <h3><a href="#" class="main__item-cols-title"><span class="main__title-icon"><i
                                                 class="sprite sprite-icon_infographic"></i></span>Gam hồng thương mại
                                         điện tử trong dịch Covid-19</a></h3>
                             </div>
-                            <div class="main__grid-3-cols-item">
-                                <a href="#" class="main__item-3-cols-img">
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
                                     <img src="image/item-3-cols-img-3.jpg"
                                         alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
                                 </a>
-                                <h3><a href="#" class="main__item-3-cols-title">10 cách giúp doanh nghiệp làm việc hiệu
+                                <h3><a href="#" class="main__item-cols-title">10 cách giúp doanh nghiệp làm việc hiệu
                                         quả trong “Trạng thái bình thường mới”</a></h3>
                             </div>
-                            <div class="main__grid-3-cols-item">
-                                <a href="#" class="main__item-3-cols-img">
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
                                     <img src="image/item-3-cols-img-4.jpg"
                                         alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
                                 </a>
-                                <h3><a href="#" class="main__item-3-cols-title">Quy hoạch băng tần cho hệ thống di động
+                                <h3><a href="#" class="main__item-cols-title">Quy hoạch băng tần cho hệ thống di động
                                         IMT… chưa phù hợp</a></h3>
                             </div>
-                            <div class="main__grid-3-cols-item">
-                                <a href="#" class="main__item-3-cols-img">
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
                                     <img src="image/item-3-cols-img-5.jpg"
                                         alt="Gam hồng thương mại điện tử trong dịch Covid-19">
                                 </a>
-                                <h3><a href="#" class="main__item-3-cols-title">Gam hồng thương mại điện tử trong dịch
+                                <h3><a href="#" class="main__item-cols-title">Gam hồng thương mại điện tử trong dịch
                                         Covid-19</a></h3>
                             </div>
-                            <div class="main__grid-3-cols-item">
-                                <a href="#" class="main__item-3-cols-img">
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
                                     <img src="image/item-3-cols-img-6.jpg"
                                         alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường”">
                                 </a>
-                                <h3><a href="#" class="main__item-3-cols-title">10 cách giúp doanh nghiệp làm việc hiệu
+                                <h3><a href="#" class="main__item-cols-title">10 cách giúp doanh nghiệp làm việc hiệu
                                         quả trong “Trạng thái bình thường”</a></h3>
                             </div>
                         </div>
-
-
                         <div class="main__news_listing">
                             <div class="main__news-listing-item d-flex d-flex">
                                 <div class="main__nl-item-img">
@@ -253,7 +259,7 @@
                             </div>
                             <div class="main__news-listing-item d-flex">
                                 <div class="main__nl-item-img">
-                                    <img src="image/new-listing-3.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    <img src="image/new-listing-1.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
                                     BĐS nào để sinh lời nhanh chóng?">
                                 </div>
                                 <div class="main__nl-item-content">
@@ -284,7 +290,7 @@
                         </div>
                         <div class="main__emagazine d-flex">
                             <div class="main__emagazine-left">
-                                <h3><a href="" class="main__suggest-wrap-name text-uppercase">Emagazine</a></h3>
+                                <h3><a href="" class="main__category-title-name text-uppercase">Emagazine</a></h3>
                                 <div class="main__emagazine-listing d-flex justify-content-between flex-wrap ">
                                     <div class="main__emagazine-listing-item">
                                         <a href="#" class="main__el-item-img">
@@ -333,8 +339,8 @@
                                 </div>
                             </div>
                             <div class="main__emagazine-right">
-                                <h3><a href="#" class="main__suggest-wrap-name text-uppercase">Tin đọc nhiều</a></h3>
-                                <div class="most-read-listing">
+                                <h3><a href="#" class="main__category-title-name text-uppercase">Tin đọc nhiều</a></h3>
+                                <div class="main__most-read-listing">
                                     <div class="main__mr-news-item d-flex">
                                         <span class="main__mr-item-no">1.</span>
                                         <a href="#" class="main__mr-item-title">Quy hoạch băng tần cho hệ thống di động
@@ -390,7 +396,7 @@
                             </div>
                             <div class="main__news-listing-item d-flex">
                                 <div class="main__nl-item-img">
-                                    <img src="image/new-listing-3.jpg"
+                                    <img src="image/new-listing-1.jpg"
                                         alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
                                 </div>
                                 <div class="main__nl-item-content">
@@ -441,59 +447,525 @@
                     </div>
                 </div>
             </div>
+
             <div class="main__video">
                 <div class="container">
                     <div class="main__video-title d-flex align-items-center">
-                        <span class="main__title-icon d-flex"><i class="sprite sprite-play"></i></span><span>Video</span>
+                        <span class="main__title-icon d-flex"><i
+                                class="sprite sprite-play"></i></span><span>Video</span>
                     </div>
                     <div class="main__video-flex d-flex">
                         <div class="main__hightlight-video">
                             <a href="#" class="main__video-img">
-                                <img src="image/video-1.jpg" alt="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện &ldquo;bình thường mới&rdquo;">
+                                <img src="image/video-1.jpg"
+                                    alt="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện &ldquo;bình thường mới&rdquo;">
                                 <span class="main__video-btn"><i class="sprite sprite-play_white_big"></i></span>
                                 <span class="main__video-time">03:20</span>
-                                <a href="#" class="main__video-title"> Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện "bình thường mới"</a>
+                                <a href="#" class="main__video-title"> Hà Nội thúc đẩy quan hệ thương mại đầu tư với
+                                    Nhật Bản trong điều kiện "bình thường mới"</a>
                             </a>
                         </div>
                         <div class="main__video-grid d-flex justify-content-between flex-wrap">
                             <div class="main__video-item">
                                 <a href="#" class="main__video-img">
-                                    <img src="image/video-item-1.jpg" alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù">
+                                    <img src="image/video-item-1.jpg"
+                                        alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù">
                                     <span class="main__video-btn"><i class="sprite sprite-play_white_small"></i></span>
                                     <span class="main__video-time">03:20</span>
                                 </a>
-                                <a href="#" class="main__video-title">Quy hoạch băng tần cho hệ thống di động IMT… chưa phù</a>
+                                <a href="#" class="main__video-title">Quy hoạch băng tần cho hệ thống di động IMT… chưa
+                                    phù</a>
                             </div>
                             <div class="main__video-item">
                                 <a href="#" class="main__video-img">
-                                    <img src="image/video-item-1.jpg" alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù">
+                                    <img src="image/video-item-2.jpg"
+                                        alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù">
                                     <span class="main__video-btn"><i class="sprite sprite-play_white_small"></i></span>
                                     <span class="main__video-time">03:20</span>
                                 </a>
-                                <a href="#" class="main__video-title">Quy hoạch băng tần cho hệ thống di động IMT… chưa phù</a>
+                                <a href="#" class="main__video-title">Quy hoạch băng tần cho hệ thống di động IMT… chưa
+                                    phù</a>
                             </div>
                             <div class="main__video-item">
                                 <a href="#" class="main__video-img">
-                                    <img src="image/video-item-1.jpg" alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù">
+                                    <img src="image/video-item-3.jpg"
+                                        alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù">
                                     <span class="main__video-btn"><i class="sprite sprite-play_white_small"></i></span>
                                     <span class="main__video-time">03:20</span>
                                 </a>
-                                <a href="#" class="main__video-title">Quy hoạch băng tần cho hệ thống di động IMT… chưa phù</a>
+                                <a href="#" class="main__video-title">Quy hoạch băng tần cho hệ thống di động IMT… chưa
+                                    phù</a>
                             </div>
                             <div class="main__video-item">
                                 <a href="#" class="main__video-img">
-                                    <img src="image/video-item-1.jpg" alt=" Quy hoạch băng tần cho hệ thống di động IMT… chưa phù">
+                                    <img src="image/video-item-4.jpg"
+                                        alt=" Quy hoạch băng tần cho hệ thống di động IMT… chưa phù">
                                     <span class="main__video-btn"><i class="sprite sprite-play_white_small"></i></span>
                                     <span class="main__video-time">03:20</span>
                                 </a>
-                                <a href="#" class="main__video-title">Quy hoạch băng tần cho hệ thống di động IMT… chưa phù</a>
+                                <a href="#" class="main__video-title">Quy hoạch băng tần cho hệ thống di động IMT… chưa
+                                    phù</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="main__category-list-news">
+                <div class="main__aside-layout d-flex">
+                    <div class="main__aside-layout-left">
+                        <div class="home__category-list-news-item">
+                            <div class="main__category-title-wrap d-flex">
+                                <h3>
+                                    <a class="main__category-title-name text-uppercase" href=""><span
+                                            class="main__title-icon"><i class="sprite sprite-event"></i></span>sự
+                                        kiện</a>
+                                </h3>
+                                <ul
+                                    class="main__category-title-nav d-flex justify-content-between align-items-center text-uppercase">
+                                    <li><a href="#">Chính trị - xã hội</a></li>
+                                    <li><a href="#">cải cách hành chính</a></li>
+                                    <li><a href="#">tiêu điểm</a></li>
+                                    <li><a href="#"><i class="sprite sprite-Group"></i> </a></li>
+                                </ul>
+                            </div>
+                            <div class="main__cl-news-flex d-flex">
+                                <div class="main__grid-2-cols d-flex justify-content-between flex-wrap">
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien1.jpg"
+                                                alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">10 cách giúp doanh nghiệp làm việc
+                                                hiệu
+                                                quả trong “Trạng thái bình thường mới”</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien2.jpg"
+                                                alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">Quy hoạch băng tần cho hệ thống di
+                                                động
+                                                IMT… chưa phù hợp</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main__most-read-listing">
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">T&T Group và Hành trình yêu thương: Khi
+                                            niềm tin được sẻ chia thì hạnh phúc được nhân lên</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Hà Nội: Vận động cán bộ, công chức,
+                                            người lao động ủng hộ một ngày lương cho phòng Covid-19</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Bộ Xây dựng đề nghị nới việc phân lô bán
+                                            nền</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Thêm một biểu tượng hấp dẫn của Thủ
+                                            đô</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__category-list-news-item">
+                            <div class="main__category-title-wrap d-flex">
+                                <h3>
+                                    <a class="main__category-title-name text-uppercase" href="category.html"><span
+                                            class="main__title-icon"><i
+                                                class="sprite sprite-enterprise"></i></span>doanh nghiệp</a>
+                                </h3>
+                                <ul
+                                    class="main__category-title-nav d-flex justify-content-between align-items-center text-uppercase">
+                                    <li><a href="#">Chính trị - xã hội</a></li>
+                                    <li><a href="#">cải cách hành chính</a></li>
+                                    <li><a href="#">tiêu điểm</a></li>
+                                    <li><a href="#"><i class="sprite sprite-Group"></i> </a></li>
+                                </ul>
+                            </div>
+                            <div class="main__cl-news-flex d-flex">
+                                <div class="main__grid-2-cols d-flex justify-content-between flex-wrap">
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien1.jpg"
+                                                alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">10 cách giúp doanh nghiệp làm việc
+                                                hiệu
+                                                quả trong “Trạng thái bình thường mới”</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien2.jpg"
+                                                alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">Quy hoạch băng tần cho hệ thống di
+                                                động
+                                                IMT… chưa phù hợp</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main__most-read-listing">
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">T&T Group và Hành trình yêu thương: Khi
+                                            niềm tin được sẻ chia thì hạnh phúc được nhân lên</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Hà Nội: Vận động cán bộ, công chức,
+                                            người lao động ủng hộ một ngày lương cho phòng Covid-19</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Bộ Xây dựng đề nghị nới việc phân lô bán
+                                            nền</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Thêm một biểu tượng hấp dẫn của Thủ
+                                            đô</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__category-list-news-item">
+                            <div class="main__category-title-wrap d-flex">
+                                <h3>
+                                    <a class="main__category-title-name text-uppercase" href=""><span
+                                            class="main__title-icon"><i class="sprite sprite-Economy"></i></span>KINH
+                                        TẾ</a>
+                                </h3>
+                                <ul
+                                    class="main__category-title-nav d-flex justify-content-between align-items-center text-uppercase">
+                                    <li><a href="#">Chính trị - xã hội</a></li>
+                                    <li><a href="#">cải cách hành chính</a></li>
+                                    <li><a href="#">tiêu điểm</a></li>
+                                    <li><a href="#"><i class="sprite sprite-Group"></i> </a></li>
+                                </ul>
+                            </div>
+                            <div class="main__cl-news-flex d-flex">
+                                <div class="main__grid-2-cols d-flex justify-content-between flex-wrap">
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien1.jpg"
+                                                alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">10 cách giúp doanh nghiệp làm việc
+                                                hiệu
+                                                quả trong “Trạng thái bình thường mới”</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien2.jpg"
+                                                alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">Quy hoạch băng tần cho hệ thống di
+                                                động
+                                                IMT… chưa phù hợp</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main__most-read-listing">
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">T&T Group và Hành trình yêu thương: Khi
+                                            niềm tin được sẻ chia thì hạnh phúc được nhân lên</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Hà Nội: Vận động cán bộ, công chức,
+                                            người lao động ủng hộ một ngày lương cho phòng Covid-19</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Bộ Xây dựng đề nghị nới việc phân lô bán
+                                            nền</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Thêm một biểu tượng hấp dẫn của Thủ
+                                            đô</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__category-list-news-item">
+                            <div class="main__category-title-wrap d-flex">
+                                <h3>
+                                    <a class="main__category-title-name text-uppercase" href=""><span
+                                            class="main__title-icon"><i class="sprite sprite-society"></i></span>xã
+                                        hội</a>
+                                </h3>
+                                <ul
+                                    class="main__category-title-nav d-flex justify-content-between align-items-center text-uppercase">
+                                    <li><a href="#">Chính trị - xã hội</a></li>
+                                    <li><a href="#">cải cách hành chính</a></li>
+                                    <li><a href="#">tiêu điểm</a></li>
+                                    <li><a href="#"><i class="sprite sprite-Group"></i> </a></li>
+                                </ul>
+                            </div>
+                            <div class="main__cl-news-flex d-flex">
+                                <div class="main__grid-2-cols d-flex justify-content-between flex-wrap">
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien1.jpg"
+                                                alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">10 cách giúp doanh nghiệp làm việc
+                                                hiệu
+                                                quả trong “Trạng thái bình thường mới”</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien2.jpg"
+                                                alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">Quy hoạch băng tần cho hệ thống di
+                                                động
+                                                IMT… chưa phù hợp</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main__most-read-listing">
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">T&T Group và Hành trình yêu thương: Khi
+                                            niềm tin được sẻ chia thì hạnh phúc được nhân lên</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Hà Nội: Vận động cán bộ, công chức,
+                                            người lao động ủng hộ một ngày lương cho phòng Covid-19</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Bộ Xây dựng đề nghị nới việc phân lô bán
+                                            nền</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Thêm một biểu tượng hấp dẫn của Thủ
+                                            đô</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__category-list-news-item">
+                            <div class="main__category-title-wrap d-flex">
+                                <h3>
+                                    <a class="main__category-title-name text-uppercase" href=""><span
+                                            class="main__title-icon"><i class="sprite sprite-Law"></i></span>pháp
+                                        luật</a>
+                                </h3>
+                                <ul
+                                    class="main__category-title-nav d-flex justify-content-between align-items-center text-uppercase">
+                                    <li><a href="#">Chính trị - xã hội</a></li>
+                                    <li><a href="#">cải cách hành chính</a></li>
+                                    <li><a href="#">tiêu điểm</a></li>
+                                    <li><a href="#"><i class="sprite sprite-Group"></i> </a></li>
+                                </ul>
+                            </div>
+                            <div class="main__cl-news-flex d-flex">
+                                <div class="main__grid-2-cols d-flex justify-content-between flex-wrap">
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien1.jpg"
+                                                alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">10 cách giúp doanh nghiệp làm việc
+                                                hiệu
+                                                quả trong “Trạng thái bình thường mới”</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien2.jpg"
+                                                alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">Quy hoạch băng tần cho hệ thống di
+                                                động
+                                                IMT… chưa phù hợp</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main__most-read-listing">
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">T&T Group và Hành trình yêu thương: Khi
+                                            niềm tin được sẻ chia thì hạnh phúc được nhân lên</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Hà Nội: Vận động cán bộ, công chức,
+                                            người lao động ủng hộ một ngày lương cho phòng Covid-19</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Bộ Xây dựng đề nghị nới việc phân lô bán
+                                            nền</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Thêm một biểu tượng hấp dẫn của Thủ
+                                            đô</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__category-list-news-item">
+                            <div class="main__category-title-wrap d-flex">
+                                <h3>
+                                    <a class="main__category-title-name text-uppercase" href=""><span
+                                            class="main__title-icon"><i
+                                                class="sprite sprite-international"></i></span>QUỐC TẾ</a>
+                                </h3>
+                                <ul
+                                    class="main__category-title-nav d-flex justify-content-between align-items-center text-uppercase">
+                                    <li><a href="#">Chính trị - xã hội</a></li>
+                                    <li><a href="#">cải cách hành chính</a></li>
+                                    <li><a href="#">tiêu điểm</a></li>
+                                    <li><a href="#"><i class="sprite sprite-Group"></i> </a></li>
+                                </ul>
+                            </div>
+                            <div class="main__cl-news-flex d-flex">
+                                <div class="main__grid-2-cols d-flex justify-content-between flex-wrap">
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien1.jpg"
+                                                alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">10 cách giúp doanh nghiệp làm việc
+                                                hiệu
+                                                quả trong “Trạng thái bình thường mới”</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                    <div class="main__grid-cols-item">
+                                        <a href="#" class="main__item-cols-img">
+                                            <img src="image/sukien2.jpg"
+                                                alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                        </a>
+                                        <h3><a href="#" class="main__item-cols-title">Quy hoạch băng tần cho hệ thống di
+                                                động
+                                                IMT… chưa phù hợp</a></h3>
+                                        <p class="main__item-cols-conte">
+                                            Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc
+                                            họp khẩn cấp...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main__most-read-listing">
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">T&T Group và Hành trình yêu thương: Khi
+                                            niềm tin được sẻ chia thì hạnh phúc được nhân lên</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Hà Nội: Vận động cán bộ, công chức,
+                                            người lao động ủng hộ một ngày lương cho phòng Covid-19</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Bộ Xây dựng đề nghị nới việc phân lô bán
+                                            nền</a>
+                                    </div>
+                                    <div class="main__mr-news-item d-flex">
+                                        <a href="#" class="main__mr-item-title">Thêm một biểu tượng hấp dẫn của Thủ
+                                            đô</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__aside-layout-right"></div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="main__navbar-menu d-flex text-uppercase">
+                <ul class="d-flex">
+                    <li>
+                        <a href="#" class="header__navlink--active">
+                            <span class="header__icon">
+                                <i class="sprite sprite-home"></i>
+                            </span>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li><a href="#">sự kiện</a></li>
+                    <li><a href="category.html">doanh nghiệp</a></li>
+                    <li><a href="#">tiếp thị</a></li>
+                    <li><a href="#">kinh tế</a></li>
+                    <li><a href="#">xã hội</a></li>
+                    <li><a href="#">pháp luật</a></li>
+                    <li><a href="#">quốc tế</a></li>
+                    <li><a href="#">video</a></li>
+                </ul>
+                <div class="header__navbar-search">
+                    <a href=""><i class="sprite sprite-search"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__devide"></div>
+        <div class="footer__main-flex ">
+            <div class="container d-flex">
+                <div class="footer__logo footer__content-col">
+                    <i class="sprite sprite-logo-footer"></i>
+                </div>
+                <div class="footer__content-col">
+                    <h3 class="footer-company">
+                        Logo Here Newspaper
+                    </h3>
+                    <a class="footer__company-info" href="#">
+                        <span>Địa chỉ: </span>85 Vũ Trọng Phụng, Thanh Xuân, Hà Nội
+                    </a>
+                    <a class="footer__company-info" href="#">
+                        <span>Hotline: </span>0912 345 678
+                    </a>
+                    <a href="#" class="footer__company-info">
+                        <span>Email: </span>abc@gmail.com
+                    </a>
+                </div>
+                <div class="footer__content-col">
+                    <p class="footer__company-info" href="#">
+                        <span>Tổng biên tập: </span>Nguyễn Văn A
+                    </p>
+                    <p class="footer__company-info" hre  f="#">
+                        <span>Phó tổng biên tập: </span>Trần Thị B
+                    </p>
+                    <p class="footer__company-info" href="#">
+                        Chỉ được phát hành lại thông tin từ website này khi có sự đồng ý bằng văn bản của cơ quan chủ
+                        quản.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
-
 </html>
