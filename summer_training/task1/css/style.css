@@ -296,6 +296,9 @@ img{
 .header__media-icon{
   margin-right: 8px;
 }
+.header__navbar-search a{
+  display: flex;
+}
 .main__navbar-menu ul li {
   margin-right: 22px;
 }
