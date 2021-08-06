@@ -220,14 +220,13 @@ img{
 }
 .main__navbar-menu a {
   display: inline-block;
-  padding: 10px 0px;
+  padding: 10px 11px;
   color: #e6e6e6;
   line-height: 19px;
 }
 .main__navbar-menu .main__navlink--active {
   background-color: #0b4888;
   color: #ffffff;
-  padding: 10px 8px;
 }
 .header__navbar-flex {
   position: relative;
@@ -247,11 +246,12 @@ img{
 .is-active .header__menu-toggle{
   display: block;
 }
-.is-active .header__icon-close{
+.is-active .header__icon-list{
   display: none;
 }
 .is-active .header__icon-close{
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 .header__icon-close{
   display: none;
@@ -276,7 +276,8 @@ img{
 }
 .header__cat-item-link li a{
   font: 500 12px/18px SF;
-  margin-bottom: 6px
+  margin-bottom: 6px;
+  color:  #616161;
 }
 .header__cat-item-link li:last-child a{
   margin-bottom: 0;
@@ -298,9 +299,6 @@ img{
 }
 .header__navbar-search a{
   display: flex;
-}
-.main__navbar-menu ul li {
-  margin-right: 22px;
 }
 .main__navbar-icon {
   margin-right: 6px;
@@ -392,6 +390,61 @@ img{
   padding-top: 18px;
   width: 300px;
   margin-left: 30px;
+}
+.main__economic-indicators-wrap{
+  padding: 15px;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+}
+.home__economic-tab a{
+  font-size: 14px;
+  color: #8b8d93;
+  padding: 8px 0px;
+}
+.home__economic-tab a.active{
+  color: #147ade;
+  border-bottom: 3px solid #147ade;
+}
+.main__economic-tab-content-row{
+  padding: 8px 0px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.main__economic-tab-content-row:last-child{
+  border: none;
+  padding-bottom: 0px;
+}
+.economic-tab-name{
+  width: 63px;
+}
+.main__economic-tab-fullname , .main__economic-tab-abbr-name{
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main__economic-tab-abbr-name{
+  padding-right: 4px;
+  color: #464952;
+  font-size: 16px;
+}
+.main__economic-tab-fullname{
+  font-size: 12px;
+  color: #9699a1;
+}
+.main__economic-tab-exchange-rate{
+  font-size: 16px;
+  color: #464952;
+  width: 107px;
+  text-align: right;
+}
+.main__economic-tab-change{
+  font-size: 15px;
+  width: calc(100% - 107px - 63px);
+  text-align: right;
+}
+.main__economic-tab-change--down{
+  color: #f35a57;
 }
 .main__category-title-wrap {
   padding: 12px 0px;

@@ -14,3 +14,14 @@ toggle.on('click', () => {
 $('.header__icon-close').on('click', () => {
     menuToggle.toggleClass('is-active');
 })
+
+$('ul.main__economic-tabs li a').click(function(){
+    $this = $(this);
+    $('.main__economic-tab-content').hide();
+    $('ul.main__economic-tabs li a').removeClass('active');
+    $this.addClass('active');
+    var panel = $this.attr('href');
+    $(panel).show();
+    return false;
+  });//end click
+  $('ul.main__economic-tabs li:first a').click();
