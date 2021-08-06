@@ -224,7 +224,7 @@ img{
   color: #e6e6e6;
   line-height: 19px;
 }
-.main__navbar-menu .main__navlink--active {
+.header .main__navbar-menu a.active {
   background-color: #0b4888;
   color: #ffffff;
 }
@@ -629,7 +629,6 @@ img{
 }
 .main__category-list-news{
   padding-bottom: 30px;
-  margin-bottom: 20px;
 }
 .main__category-list-news .main__most-read-listing{
   width: 218px;
@@ -639,6 +638,9 @@ img{
 }
 .main__category-list-news .main__item-cols-title{
   margin-bottom: 12px;
+}
+.footer{
+  margin-top: 20px;
 }
 .footer, .footer a{
   background-color: #095AAA;

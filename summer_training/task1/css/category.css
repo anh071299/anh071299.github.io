@@ -1,12 +1,12 @@
 .main__top-news{
     padding-top: 0px;
 }
-.main__category-title-wrap{
-    justify-content: flex-start;
-}
 .main__category-title-name{
     margin-right: 9px;
 }
 .main__hot-news-aside{
     width: 243px;
+}
+.main__category-page-new-listing{
+    margin-bottom: 30px;
 }
