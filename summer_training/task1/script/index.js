@@ -29,3 +29,4 @@ $('ul.main__economic-tabs li a').click(function(){
 // header
 let linkIndex = location.pathname.split("/").length;
   $('.main__navbar-menu a[href^="' + location.pathname.split("/")[linkIndex - 1] + '"]').addClass('active');
+  
