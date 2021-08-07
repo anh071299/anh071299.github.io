@@ -16,8 +16,12 @@
   src: url(../font/Merriweather-Bold.ttf);
 }
 @font-face {
-  font-family: "NS";
+  font-family: "NSB";
   src: url(../font/NotoSerif-Bold.ttf);
+}
+@font-face {
+  font-family: "NSR";
+  src: url(../font/NotoSerif-Regular.ttf);
 }
 body {
   font: 400 14px/20px Roboto;
@@ -63,100 +67,120 @@ img{
   height: 6px;
   background-position: -89px -5px;
 }
+.sprite-clock {
+  width: 15px;
+  height: 15px;
+  background-position: -109px -5px;
+}
 .sprite-eMagazine {
   width: 94px;
   height: 18px;
-  background-position: -109px -5px;
+  background-position: -89px -30px;
 }
 .sprite-enterprise {
   width: 18px;
   height: 18px;
-  background-position: -89px -33px;
+  background-position: -193px -5px;
+}
+.sprite-evelope {
+  width: 12px;
+  height: 9px;
+  background-position: -128px 1px;
 }
 .sprite-event {
   width: 18px;
   height: 18px;
-  background-position: -117px -33px;
+  background-position: -193px -33px;
+}
+.sprite-facebook {
+  width: 5px;
+  height: 9px;
+  background-position: -152.5px -2.5px;
 }
 .sprite-home {
   width: 19px;
   height: 15px;
-  background-position: -145px -33px;
+  background-position: -5px -61px;
 }
 .sprite-icon-close {
   width: 17px;
   height: 17px;
-  background-position: -174px -33px;
+  background-position: -34px -61px;
 }
 .sprite-icon-emagazine {
   width: 18px;
   height: 18px;
-  background-position: -5px -60px;
+  background-position: -61px -61px;
 }
 .sprite-icon-image {
   width: 16px;
   height: 16px;
-  background-position: -201px -33px;
+  background-position: -89px -61px;
 }
 .sprite-icon-infographic {
   width: 16px;
   height: 16px;
-  background-position: -33px -59px;
+  background-position: -115px -61px;
 }
 .sprite-icon-print-emagazine {
   width: 18px;
   height: 18px;
-  background-position: -59px -59px;
+  background-position: -141px -61px;
 }
 .sprite-icon-video {
   width: 16px;
   height: 16px;
-  background-position: -145px -59px;
+  background-position: -169px -61px;
 }
 .sprite-icon_image {
   width: 16px;
   height: 16px;
-  background-position: -201px -59px;
+  background-position: -195px -61px;
 }
 .sprite-icon_infographic {
   width: 16px;
   height: 16px;
-  background-position: -33px -85px;
+  background-position: -5px -87px;
 }
 .sprite-international {
   width: 20px;
   height: 20px;
-  background-position: -171px -60px;
+  background-position: -89px -87px;
 }
 .sprite-lighting {
   width: 10px;
   height: 15px;
+  background-position: -171px -5px;
+}
+.sprite-like {
+  width: 10px;
+  height: 11px;
   background-position: -35px -33px;
 }
 .sprite-list {
   width: 18px;
   height: 14px;
-  background-position: -5px -90px;
+  background-position: -169px -87px;
 }
 .sprite-logo {
   width: 188px;
   height: 42px;
-  background-position: -5px -114px;
+  background-position: -5px -117px;
 }
 .sprite-logo-footer {
   width: 143px;
   height: 32px;
-  background-position: -5px -166px;
+  background-position: -5px -169px;
 }
 .sprite-play {
   width: 24px;
   height: 24px;
-  background-position: -158px -166px;
+  background-position: -158px -169px;
 }
 .sprite-play_white_big {
   width: 96px;
   height: 96px;
-  background-position: -227px -5px;
+  background-position: -221px -5px;
 }
 .sprite-play_white_small {
   width: 48px;
@@ -173,6 +197,17 @@ img{
   height: 20px;
   background-position: -287px -111px;
 }
+.sprite-twitter {
+  width: 10px;
+  height: 10px;
+  background-position: -311px -105px;
+}
+.sprite-zing {
+  width: 8px;
+  height: 9px;
+  background-position: -311px -125px;
+}
+
 .d-flex{
   display: flex;
 }
@@ -346,7 +381,7 @@ img{
   width: 467px;
 }
 .main__hightlight-news-title{
-  font: 700 24px/32px NS;
+  font: 700 24px/32px NSB;
   color: #121212;
   margin-bottom: 13px;
 }

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-flex d-flex justify-content-between">
+                    <h1 class="header__logo">
+                        <a href="index.html"><i class="sprite sprite-logo"></i></a>
+                    </h1>
+                    <ul class="header__tags d-flex align-items-center">
+                        <li class="d-flex align-items-center"><i class="sprite sprite-lighting"></i></li>
+                        <li><a href="#" title="# Biểu tình lan ra ở Mỹ"><span># Biểu tình lan ra ở Mỹ</span></a></li>
+                        <li><a href="#" title="# Nhân sự,Đại hội Đảng các cấp"><span># Nhân sự,Đại hội Đảng các
+                                    cấp</span></a></li>
+                        <li><a href="#" title="# Dịch Covid19"><span># Dịch Covid19</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__navbar">
+            <div class="container">
+                <div class="header__navbar-flex d-flex justify-content-between align-items-center">
+                    <div class="main__navbar-menu d-flex text-uppercase">
+                        <ul class="d-flex">
+                            <li>
+                                <a href="index.html" class="active" title="Trang chủ">
+                                    <span class="main__navbar-icon">
+                                        <i class="sprite sprite-home"></i>
+                                    </span>
+                                    <span>Trang chủ</span>
+                                </a>
+                            </li>
+                            <li><a href="#" title="Sự kiện">sự kiện</a></li>
+                            <li><a href="category.html" title="Doanh nghiệp">doanh nghiệp</a></li>
+                            <li><a href="#" title="Tiếp thị">tiếp thị</a></li>
+                            <li><a href="#" title="Kinh tế">kinh tế</a></li>
+                            <li><a href="#" title="Xã hội">xã hội</a></li>
+                            <li><a href="#" title="Pháp luật">pháp luật</a></li>
+                            <li><a href="#" title="Quốc tế">quốc tế</a></li>
+                            <li><a href="#" title="Video">video</a></li>
+                        </ul>
+                        <div class="header__navbar-search d-flex align-items-center">
+                            <a href="#" class="d-flex"><i class="sprite sprite-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="header__navbar-toggle">
+                        <span class="header__icon-list"><i class="sprite sprite-list"></i></span>
+                        <span class="header__icon-close d-flex align-items-center"><i
+                                class="sprite sprite-icon-close"></i></span>
+                        <div class="header__menu-toggle">
+                            <ul class="header__category-list d-flex justify-content-between">
+                                <li class="header__cat-item">
+                                    <a href="#" class="header__cat-item-name" title="Sự kiện">Sự kiện</a>
+                                    <ul class="header__cat-item-link">
+                                        <li><a href="#" title="Chính trị - Xã hội">Chính trị - Xã hội</a></li>
+                                        <li><a href="#" title="Cải cách hành chính">Cải cách hành chính</a></li>
+                                        <li><a href="#" title="Tiêu điểm">Tiêu điểm</a></li>
+                                        <li><a href="#" title="Tin địa phương">Tin địa phương</a></li>
+                                        <li><a href="#" title="Hoạt động của Hội">Hoạt động của Hội</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__cat-item">
+                                    <a href="#" class="header__cat-item-name" title="Doanh nghiệp">doanh nghiệp</a>
+                                    <ul class="header__cat-item-link">
+                                        <li><a href="#" title="Diễn đàn">Diễn đàn</a></li>
+                                        <li><a href="#" title="Thương hiệu">Thương hiệu</a></li>
+                                        <li><a href="#" title="Trách nhiệm xã hội">Trách nhiệm xã hội</a></li>
+                                        <li><a href="#" title="Thông tin thương hiệu">Thông tin thương hiệu</a></li>
+                                        <li><a href="#" title="Khởi nghiệp">Khởi nghiệp</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__cat-item">
+                                    <a href="#" class="header__cat-item-name" title="Tiếp thị">Tiếp thị</a>
+                                    <ul class="header__cat-item-link">
+                                        <li><a href="#" title="Nhịp đập thị trường">Nhịp đập thị trường</a></li>
+                                        <li><a href="#" title="Tiếp thị số">Tiếp thị số </a></li>
+                                        <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+                                        <li><a href="#" title="Bảo vệ người tiêu dùng">Bảo vệ người tiêu dùng </a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__cat-item">
+                                    <a href="#" class="header__cat-item-name" title="Kinh tế">kinh tế</a>
+                                    <ul class="header__cat-item-link">
+                                        <li><a href="#" title="Kinh doanh">Kinh doanh</a></li>
+                                        <li><a href="#" title="Tài chính – Đầu tư"> Tài chính – Đầu tư</a></li>
+                                        <li><a href="#" title="Ngân hàng">Ngân hàng</a></li>
+                                        <li><a href="#" title="Bất động sản">Bất động sản</a></li>
+                                        <li><a href="#" title="Chứng khoán">Chứng khoán</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__cat-item">
+                                    <a href="#" class="header__cat-item-name" title="Xã hội">Xã hội</a>
+                                    <ul class="header__cat-item-link">
+                                        <li><a href="#" title="Văn hóa">Văn hóa</a></li>
+                                        <li><a href="#" title="Giáo dục">Giáo dục </a></li>
+                                        <li><a href="#" title="Sức khỏe">Sức khỏe</a></li>
+                                        <li><a href="#" title="Du lịch">Du lịch</a></li>
+                                        <li><a href="#" title="Ẩm thực">Ẩm thực</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__cat-item">
+                                    <a href="#" class="header__cat-item-name" title="Pháp luật">Pháp luật</a>
+                                    <ul class="header__cat-item-link">
+                                        <li><a href="#" title="Chính sách mới">Chính sách mới</a></li>
+                                        <li><a href="#" title="Tiếp thị và Pháp luật">Tiếp thị và Pháp luật</a></li>
+                                        <li><a href="#" title="Tư vấn">Tư vấn</a></li>
+                                        <li><a href="#" title="Luật sư của bạn">Luật sư của bạn</a></li>
+                                        <li><a href="#" title="Đơn thư bạn đọc">Đơn thư bạn đọc</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__cat-item">
+                                    <a href="#" class="header__cat-item-name" title="Quốc tế">Quốc tế</a>
+                                    <ul class="header__cat-item-link">
+                                        <li><a href="#" title="Thế giới 24H">Thế giới 24H</a></li>
+                                        <li><a href="#" title="Tư liệu">Tư liệu</a></li>
+                                        <li><a href="#" title="Phân tích – Bình luận">Phân tích – Bình luận</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="header__media-list d-flex">
+                                <li>
+                                    <a href="" class="d-flex align-items-center" title="Video">
+                                        <span class="header__media-icon "><i class="sprite sprite-icon-video"></i>
+                                        </span><span>Video</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-flex align-items-center" title="ẢNh">
+                                        <span class="header__media-icon "><i class="sprite sprite-icon-image"></i>
+                                        </span><span>ẢNh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-flex align-items-center" title="infographic">
+                                        <span class="header__media-icon "><i class="sprite sprite-icon-infographic"></i>
+                                        </span><span>infographic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-flex align-items-center" title="emagazine">
+                                        <span class="header__media-icon "><i class="sprite sprite-icon-emagazine"></i>
+                                        </span><span>emagazine</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-flex align-items-center" title="Tạp chí in">
+                                        <span class="header__media-icon "><i
+                                                class="sprite sprite-icon-print-emagazine"></i>
+                                        </span><span>Tạp chí in</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+        <div class="container">
+            <div class="main__aside-layout d-flex">
+                <div class="main__aside-layout-left">
+                    <div class="main__detail-blog mb-25">
+                        <h1 class="main__detail-blog-title">
+                            Hội nghị tập huấn trực tuyến phòng, chống dịch COVID-19 tại các cơ sở khám chữa bệnh
+                        </h1>
+                        <div class="main__detail-blog-meta d-flex align-items-center">
+                            <a href="category.html" class="main__news-category" title="doanh nghiệp">doanh nghiệp</a>
+                            <div class="main__detail-blog-time d-flex align-items-center">
+                                <span class="main__detail-blog-icon d-flex">
+                                    <i class="sprite sprite-clock"></i>
+                                </span>
+                                <span class="main__post-time">04:10 PM 21/02/2020</span>
+                            </div>
+                        </div>
+                        <div class="main__detail-blog-summary">
+                            Tại Hà Nội, Bộ TT&TT đã tổ chức Hội nghị giao ban quản lý nhà nước tháng 9 năm 2018. Ủy viên
+                            Trung ương Đảng, Bí thư Ban Cán sự Đảng, Quyền Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng đã chủ
+                            trì Hội nghị.
+                        </div>
+                        <div class="main__detail-blog-share d-flex align-items-center">
+                            <a class="main__btn-share">
+                                <i class="main__btn-share-icon sprite sprite-like">
+                                </i>
+                                Thích
+                            </a>
+                            <a class="main__btn-share d-flex align-items-center">
+                                <i class="main__btn-share-icon sprite sprite-facebook">
+                                </i>
+                                Chia sẻ
+                            </a>
+                        </div>
+                        <div class="main__detail-blog-related mb-25">
+                            <ol>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center"
+                                        title="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện">
+                                        Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center"
+                                        title="Nhiều khả năng Triệu Quân Sự đã trốn thoát khỏi đèo Hải Vân">
+                                        Nhiều khả năng Triệu Quân Sự đã trốn thoát khỏi đèo Hải Vân
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center"
+                                        title="Quảng Nam xây dựng chiến lược phát triển cho cây sâm Ngọc Linh">
+                                        Quảng Nam xây dựng chiến lược phát triển cho cây sâm Ngọc Linh
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="main__detail-blog-content mb-25">
+                            <p>
+                                Hội nghị đã tập trung đánh giá những kết quả tích cực, những tồn tại của công tác quản
+                                lý nhà nước trong tháng 9/2018, đồng thời đề ra các giải pháp, mục tiêu cần thực hiện
+                                trong tháng 10/2018; chú trọng thúc đẩy phát triển các lĩnh vực trong ngành, gồm 6 lĩnh
+                                vực: Bưu chính, Viễn thông, CNTT, An toàn thông tin, Công nghiệp ICT, Báo chí- PTTH-Xuất
+                                bản.
+                            </p>
+                            <p>
+                                Tại Hội nghị, Quyền Bộ trưởng đã phân tích: Bộ phải xây dựng khung pháp lý cho từng lĩnh
+                                vực do Chính phủ giao hoặc nằm trong kế hoạch của Bộ. Các cơ quan, đơn vị của Bộ cần
+                                thường xuyên nắm bắt xem các đối tượng quản lý và người dân gặp khó khăn gì và phải giải
+                                quyết những khó khăn, vướng mắc này ra sao.
+                                Các văn bản pháp luật chính là công cụ để thúc đẩy các lĩnh vực quản lý nhà nước của Bộ
+                                phát triển lành mạnh, Quyền Bộ trưởng nhấn mạnh.
+                            </p>
+                            <figure class="main__figure-img">
+                                <img src="image/detailblog.png"
+                                    alt="Hội nghị tập huấn trực tuyến phòng, chống dịch COVID-19 tại các cơ sở khám chữa bệnh">
+                                <figcaption>Ảnh minh họa. (Nguồn ĐSVN)</figcaption>
+                            </figure>
+                            <p>
+                                Về mảng KHCN, tiêu chuẩn, công nghiệp CNTT, hiện Bộ Kế hoạch Đầu tư được Chính phủ giao
+                                xây dựng Chiến lược quốc gia 4.0. Quyền Bộ trưởng giao Vụ KHCN là đầu mối về 4.0 và
+                                khẳng định Bộ TT&TT cần xây dựng phiên bản riêng về chiến lược 4.0 cho đất nước. Vụ KHCN
+                                cần tham khảo kinh nghiệm quốc tế về 4.0 và tham khảo ý kiến của các Sở TT&TT.
+                            </p>
+                            <span class="main__detail-blog-author">Hoàng Anh</span>
+                        </div>
+                        <div class="main__detail-blog-social d-flex align-items-center mb-25">
+                            <div class="main__detail-blog-share d-flex align-items-center">
+                                <a class="main__btn-share">
+                                    <i class="main__btn-share-icon sprite sprite-like">
+                                    </i>
+                                    Thích
+                                </a>
+                                <a class="main__btn-share d-flex align-items-center">
+                                    <i class="main__btn-share-icon sprite sprite-facebook">
+                                    </i>
+                                    Chia sẻ
+                                </a>
+                            </div>
+                            <ul class="main__detail-blog-list-social d-flex">
+                                <li class="d-flex align-items-center">
+                                    <a href="#" class="d-flex"><i class="sprite sprite-twitter"></i></a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="#" class="d-flex"><i class="sprite sprite-zing"></i></a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="#" class="d-flex"><i class="sprite sprite-evelope"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__detail-blog-keywords">
+                            <b>Từ khóa: </b>gây tiếng ồn vượt ngưỡng, xả khói đen, di dời khỏi nội đô, mùi hóa chất phát
+                            tán
+                        </div>
+                    </div>
+                    <ul class="main__dots-list">
+                        <li class="main__dots-list-item"></li>
+                        <li class="main__dots-list-item"></li>
+                        <li class="main__dots-list-item"></li>
+                        <li class="main__dots-list-item"></li>
+                        <li class="main__dots-list-item"></li>
+                    </ul>
+                    <div class="main__same-category-news">
+                        <div class="main__category-title-wrap">
+                            <h3>
+                                <a class="main__category-title-name text-uppercase" href="" title="Tin cùng chuyên mục">
+                                    TIN CÙNG CHUYÊN MỤC
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="main__grid-3-cols d-flex justify-content-between flex-wrap">
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
+                                    <img src="image/item-3-cols-img-1.jpg"
+                                        alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                </a>
+                                <h3>
+                                    <a href="#" class="main__item-cols-title"
+                                        title="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                        Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
+                                    <img src="image/item-3-cols-img-2.jpg"
+                                        alt="Gam hồng thương mại điện tử trong dịch Covid-19">
+                                </a>
+                                <h3>
+                                    <a href="#" class="main__item-cols-title"
+                                        title="Gam hồng thương mại điện tử trong dịch Covid-19">
+                                        <span class="main__title-icon">
+                                            <i class="sprite sprite-icon_infographic"></i>
+                                        </span>
+                                        Gam hồng thương mại điện tử trong dịch Covid-19
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
+                                    <img src="image/item-3-cols-img-3.jpg"
+                                        alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
+                                </a>
+                                <h3>
+                                    <a href="#" class="main__item-cols-title"
+                                        title="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”">
+                                        10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường mới”
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
+                                    <img src="image/item-3-cols-img-4.jpg"
+                                        alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                </a>
+                                <h3>
+                                    <a href="#" class="main__item-cols-title"
+                                        title="Quy hoạch băng tần cho hệ thống di độngIMT… chưa phù hợp">
+                                        Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
+                                    <img src="image/item-3-cols-img-5.jpg"
+                                        alt="Gam hồng thương mại điện tử trong dịch Covid-19">
+                                </a>
+                                <h3>
+                                    <a href="#" class="main__item-cols-title"
+                                        title="Gam hồng thương mại điện tử trong dịch Covid-19">
+                                        Gam hồng thương mại điện tử trong dịch Covid-19
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="main__grid-cols-item">
+                                <a href="#" class="main__item-cols-img">
+                                    <img src="image/item-3-cols-img-6.jpg"
+                                        alt="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường”">
+                                </a>
+                                <h3>
+                                    <a href="#" class="main__item-cols-title"
+                                        title="10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường”">
+                                        10 cách giúp doanh nghiệp làm việc hiệu quả trong “Trạng thái bình thường”
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__top-news main__hot-top-news">
+                        <div class="main__category-title-wrap">
+                            <h3>
+                                <a class="main__category-title-name text-uppercase" href="" title="Tin nổi bật">
+                                    TIN NỔI BẬT
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="top-news-content d-flex">
+                            <div class=" main__hightlight-news main__hightlight-news-pleft">
+                                <a href="#" class="main__hl-news-img">
+                                    <img src="image/hightlight-news.jpg"
+                                        alt="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện “bình thường mới”">
+                                </a>
+                                <h2>
+                                    <a href="#" class="main__hightlight-news-title"
+                                    title=" Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện “bình thường mới”">
+                                        Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện "bình thường mới"
+                                    </a>
+                                </h2>
+                                <p class="main__news-content-des">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                    Covid-19 Hà Nội
+                                    triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan đến dịch
+                                    Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                            </div>
+                            <div class="main__hot-news main__hot-news-aside">
+                                <div class="main__hot-news-item">
+                                    <div class="main__hni-big-img"><img src="image/detail-top-new.jpg"
+                                            alt="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện “bình thường mới”">
+                                    </div>
+                                    <h3>
+                                        <a href="#" class="main__hni-title">Hà Nội thúc đẩy quan hệ thương mại đầu
+                                            tư với
+                                            Nhật Bản trong điều kiện bình thường mới</a>
+                                    </h3>
+                                </div>
+                                <div class="main__hot-news-item">
+                                    <h3>
+                                        <a class="main__hc-news-title" href="#">Hà Nội thúc đẩy quan hệ thương mại
+                                            đầu tư
+                                            với
+                                            Nhật Bản trong điều kiện bình thường mới</a>
+                                    </h3>
+                                </div>
+                                <div class="main__hot-news-item">
+                                    <h3>
+                                        <a class="main__hc-news-title" href="#">Hà Nội thúc đẩy quan hệ thương mại
+                                            đầu tư
+                                            với
+                                            Nhật Bản trong điều kiện bình thường mới</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__news_listing main__detail-blog-new-listing">
+                        <div class="main__category-title-wrap">
+                            <h3>
+                                <a class="main__category-title-name text-uppercase" href="#" title="Đọc thêm">
+                                    ĐỌC THÊM
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="main__news_listing-items">
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-1.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                        BĐS nào để sinh lời nhanh chóng?">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__nl-item-about">
+                                        Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc họp
+                                        khẩn cấp trong đêm để thông tin về sự việc liên quan đến dịch Covid-19. Cuộc họp
+                                        đã công bố xác nhận thêm
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-2.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                        BĐS nào để sinh lời nhanh chóng?">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="Giảm 50% phí trước bạ ô tô: Xe sang có giá lăn bánh giảm “khủng”">
+                                            <span class="main__title-icon">
+                                                <i class=" sprite sprite-icon_image"></i>
+                                            </span>
+                                            Giảm 50% phí trước bạ ô tô: Xe sang có giá lăn bánh giảm "khủng"
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="xã hội">Xã hội</a>
+                                    <p class="main__nl-item-about">
+                                        Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc họp
+                                        khẩn cấp trong đêm để thông tin về sự việc liên quan...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-1.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                        BĐS nào để sinh lời nhanh chóng?">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="kinh tế">Kinh tế</a>
+                                    <p class="main__nl-item-about">
+                                        Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc họp
+                                        khẩn cấp trong đêm để thông tin về sự việc liên quan đến dịch Covid-19. Cuộc họp
+                                        đã công bố xác nhận thêm
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-4.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                        BĐS nào để sinh lời nhanh chóng?">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="  Doanh nghiệp bất động sản ảnh hưởng ra sao bởi dịch Covid 19?">
+                                            <span class="main__title-icon">
+                                                <i class="sprite sprite-icon_infographic"></i>
+                                            </span>
+                                            Doanh nghiệp bất động sản ảnh hưởng ra sao bởi dịch Covid 19?
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="doanh nghiệp">Doanh ngiêp</a>
+                                    <p class="main__nl-item-about">
+                                        Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc họp
+                                        khẩn cấp trong đêm để thông tin về sự việc liên quan đến dịch Covid-19. Cuộc họp
+                                        đã công bố xác nhận thêm
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-5.png" alt="Bắc Kạn: Doanh nghiệp đề xuất nhiều giải pháp vượt khó hậu COVID-19">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="Bắc Kạn: Doanh nghiệp đề xuất nhiều giải pháp vượt khó hậu COVID-19">
+                                            Bắc Kạn: Doanh nghiệp đề xuất nhiều giải pháp vượt khó hậu COVID-19
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="tiếp thị">Tiếp thị</a>
+                                    <p class="main__nl-item-about">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-1.jpg" alt="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                            Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="kinh tế">Kinh tế</a>
+                                    <p class="main__nl-item-about">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-2.jpg" alt="Quảng Nam xây dựng chiến lược phát triển cho cây sâm Ngọc Linh và các dược liệu ">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="Quảng Nam xây dựng chiến lược phát triển cho cây sâm Ngọc Linh và các dược liệu">
+                                            Quảng Nam xây dựng chiến lược phát triển cho cây sâm Ngọc Linh và các dược
+                                            liệu
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="quốc tế">Quốc tế</a>
+                                    <p class="main__nl-item-about">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-6.jpg" alt="“Lấy cung làm chủ đạo và đẩy mạnh cầu của nền kinh tế”: Hiểu sao cho đúng?">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="“Lấy cung làm chủ đạo và đẩy mạnh cầu của nền kinh tế”: Hiểu sao cho đúng?">
+                                            “Lấy cung làm chủ đạo và đẩy mạnh cầu của nền kinh tế”: Hiểu sao cho đúng?
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="xã hội">Xã hội</a>
+                                    <p class="main__nl-item-about">
+                                        Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-1.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                        BĐS nào để sinh lời nhanh chóng?">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__nl-item-about">
+                                        Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc họp
+                                        khẩn cấp trong đêm để thông tin về sự việc liên quan đến dịch Covid-19. Cuộc họp
+                                        đã công bố xác nhận thêm
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__nl-item-img">
+                                    <img src="image/new-listing-2.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                        BĐS nào để sinh lời nhanh chóng?">
+                                </div>
+                                <div class="main__nl-item-content">
+                                    <h3>
+                                        <a href="#" class="main__nl-item-title" title="Giảm 50% phí trước bạ ô tô: Xe sang có giá lăn bánh giảm “khủng”">
+                                            <span class="main__title-icon">
+                                                <i class=" sprite sprite-icon_image"></i>
+                                            </span>
+                                            Giảm 50% phí trước bạ ô tô: Xe sang có giá lăn bánh giảm "khủng"
+                                        </a>
+                                    </h3>
+                                    <a href="#" class="main__news-category" title="xã hội">Xã hội</a>
+                                    <p class="main__nl-item-about">
+                                        Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch Covid-19 Hà Nội triệu tập cuộc họp
+                                        khẩn cấp trong đêm để thông tin về sự việc liên quan...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main__viewmore-wrap">
+                                <a href="#" class="main__viewmore-btn d-flex align-items-center"><span>Xem thêm</span><i class="sprite sprite-chevron-compact-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__aside-layout-right">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="main__navbar-menu d-flex text-uppercase">
+                <ul class="d-flex">
+                    <li>
+                        <a href="#" class="header__navlink--active" title="Trang chủ">
+                            <span class="header__icon">
+                                <i class="sprite sprite-home"></i>
+                            </span>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li><a href="#" title="Sự kiện">sự kiện</a></li>
+                    <li><a href="category.html" title="Doanh nghiệp" class="active">doanh nghiệp</a></li>
+                    <li><a href="#" title="Tiếp thị">tiếp thị</a></li>
+                    <li><a href="#" title="Kinh tế">kinh tế</a></li>
+                    <li><a href="#" title="Xã hội">xã hội</a></li>
+                    <li><a href="#" title="Pháp luật">pháp luật</a></li>
+                    <li><a href="#" title="Quốc tế">quốc tế</a></li>
+                    <li><a href="#" title="Video">video</a></li>
+                </ul>
+                <div class="header__navbar-search">
+                    <a href=""><i class="sprite sprite-search"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__devide"></div>
+        <div class="footer__main-flex ">
+            <div class="container d-flex">
+                <div class="footer__logo footer__content-col">
+                    <i class="sprite sprite-logo-footer"></i>
+                </div>
+                <div class="footer__content-col">
+                    <h3 class="footer-company">
+                        Logo Here Newspaper
+                    </h3>
+                    <a class="footer__company-info" href="#" title="Địa chỉ: 85 Vũ Trọng Phụng, Thanh Xuân, Hà Nội">
+                        <span>Địa chỉ: </span>85 Vũ Trọng Phụng, Thanh Xuân, Hà Nội
+                    </a>
+                    <a class="footer__company-info" href="#" title="Hotline: 0912 345 678 ">
+                        <span>Hotline: </span>0912 345 678
+                    </a>
+                    <a href="#" class="footer__company-info" title="Email: abc@gmail.com">
+                        <span>Email: </span>abc@gmail.com
+                    </a>
+                </div>
+                <div class="footer__content-col">
+                    <p class="footer__company-info" href="#">
+                        <span>Tổng biên tập: </span>Nguyễn Văn A
+                    </p>
+                    <p class="footer__company-info" hre="" f="#">
+                        <span>Phó tổng biên tập: </span>Trần Thị B
+                    </p>
+                    <p class="footer__company-info" href="#">
+                        Chỉ được phát hành lại thông tin từ website này khi có sự đồng ý bằng văn bản của cơ quan chủ
+                        quản.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
