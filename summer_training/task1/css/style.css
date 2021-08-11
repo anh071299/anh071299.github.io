@@ -4,24 +4,61 @@
   margin: 0;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url(../font/Roboto-Regular.ttf);
+  font-family: 'Roboto';
+  src:  url('../font/Roboto-Regular.ttf') format('truetype');
+  src: 
+  url('../font/Roboto-Regular.eot'),
+  url('../font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/Roboto-Regular.woff2') format('woff2'),
+      url('../font/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "SF";
-  src: url(../font/FontsFree-Net-SFProDisplay-Regular.ttf);
+  font-family: 'SF';
+  src:  url('../font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
+  src: url('../font/SFProDisplay-Regular.eot'),
+ url('../font/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/SFProDisplay-Regular.woff2') format('woff2'),
+      url('../font/SFProDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "MW";
-  src: url(../font/Merriweather-Bold.ttf);
+  font-family: 'NSB';
+  src: url('../font/NotoSerif-Bold.ttf') format('truetype');
+  src: url('../font/NotoSerif-Bold.eot'),
+   url('../font/NotoSerif-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/NotoSerif-Bold.woff2') format('woff2'),
+      url('../font/NotoSerif-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NSR';
+  src: url('../font/NotoSerif-Regular.ttf') format('truetype');
+  src:  url('../fontNotoSerif.eot'),
+       url('../fontNotoSerif.eot?#iefix') format('embedded-opentype'),
+      url('../fontNotoSerif.woff2') format('woff2'),
+      url('../font/NotoSerif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "NSB";
-  src: url(../font/NotoSerif-Bold.ttf);
-}
-@font-face {
-  font-family: "NSR";
-  src: url(../font/NotoSerif-Regular.ttf);
+  font-family: 'MW';
+  src:  url('../font/Merriweather-Bold.ttf') format('truetype');
+  src:url('../font/Merriweather-Bold.eot'), 
+  url('../font/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Merriweather-Bold.woff2') format('woff2'),
+      url('../font/Merriweather-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 body {
   font: 400 14px/20px Roboto;

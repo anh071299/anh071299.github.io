@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFProDisplay-Regular.eot');
+    src: url('SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SFProDisplay-Regular.woff2') format('woff2'),
+        url('SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('NotoSerif-Bold.eot');
+    src: url('NotoSerif-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NotoSerif-Bold.woff2') format('woff2'),
+        url('NotoSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('NotoSerif.eot');
+    src: url('NotoSerif.eot?#iefix') format('embedded-opentype'),
+        url('NotoSerif.woff2') format('woff2'),
+        url('NotoSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
