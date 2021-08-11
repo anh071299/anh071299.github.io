@@ -15,6 +15,29 @@
   font-display: swap;
 }
 @font-face {
+  font-family: 'RobotoM';
+  src: url('../font/Roboto-Medium.eot');
+  src: url('../font/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../font/Roboto-Medium.woff2') format('woff2'),
+      url('../font/Roboto-Medium.woff') format('woff'),
+      url('../font/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RobotoB';
+  src: url('../font/Roboto-Bold.eot');
+  src: url('../font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Roboto-Bold.woff2') format('woff2'),
+      url('../font/Roboto-Bold.woff') format('woff'),
+      url('../font/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "SF";
   src: url("../font/FontsFree-Net-SFProDisplay-Regular.ttf") format("truetype");
   src: url("../font/SFProDisplay-Regular.eot"),
@@ -36,7 +59,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "NSR";
   src: url("../font/NotoSerif-Regular.ttf") format("truetype");
@@ -88,160 +110,185 @@ img {
   height: 20px;
   background-position: -5px -5px;
 }
-.sprite-Group {
-  width: 14px;
-  height: 4px;
-  background-position: -35px -5px;
-}
+
 .sprite-Law {
   width: 20px;
   height: 20px;
-  background-position: -59px -5px;
+  background-position: -35px -5px;
 }
+
 .sprite-chevron-compact-down {
   width: 10px;
   height: 6px;
-  background-position: -89px -5px;
+  background-position: -65px -5px;
 }
+
 .sprite-clock {
   width: 15px;
   height: 15px;
-  background-position: -109px -5px;
+  background-position: -85px -5px;
 }
+
 .sprite-eMagazine {
   width: 94px;
   height: 18px;
-  background-position: -89px -30px;
+  background-position: -110px -5px;
 }
+
 .sprite-enterprise {
   width: 18px;
   height: 18px;
-  background-position: -193px -5px;
+  background-position: -65px -33px;
 }
+
 .sprite-evelope {
-  width: 12px;
-  height: 9px;
-  background-position: -128px 1px;
+  width: 11px;
+  height: 8px;
+  background-position: -87.5px -26px;
 }
+
 .sprite-event {
   width: 18px;
   height: 18px;
-  background-position: -193px -33px;
+  background-position: -114px -33px;
 }
+
 .sprite-facebook {
-  width: 5px;
-  height: 9px;
-  background-position: -152.5px -2.5px;
+  width: 14px;
+  height: 14px;
+  background-position: -142px -33px;
 }
+
 .sprite-home {
   width: 19px;
   height: 15px;
-  background-position: -5px -61px;
+  background-position: -166px -33px;
 }
+
 .sprite-icon-close {
   width: 17px;
   height: 17px;
-  background-position: -34px -61px;
+  background-position: -195px -33px;
 }
+
 .sprite-icon-emagazine {
   width: 18px;
   height: 18px;
-  background-position: -61px -61px;
+  background-position: -5px -60px;
 }
+
 .sprite-icon-image {
   width: 16px;
   height: 16px;
-  background-position: -89px -61px;
+  background-position: -33px -60px;
 }
+
 .sprite-icon-infographic {
   width: 16px;
   height: 16px;
-  background-position: -115px -61px;
+  background-position: -142px -60px;
 }
+
 .sprite-icon-print-emagazine {
   width: 18px;
   height: 18px;
-  background-position: -141px -61px;
+  background-position: -168px -60px;
 }
+
 .sprite-icon-video {
   width: 16px;
   height: 16px;
-  background-position: -169px -61px;
+  background-position: -196px -60px;
 }
+
 .sprite-icon_image {
   width: 16px;
   height: 16px;
-  background-position: -195px -61px;
+  background-position: -33px -86px;
 }
+
 .sprite-icon_infographic {
   width: 16px;
   height: 16px;
-  background-position: -5px -87px;
+  background-position: -59px -86px;
 }
+
 .sprite-international {
   width: 20px;
   height: 20px;
-  background-position: -89px -87px;
+  background-position: -85px -86px;
 }
+
 .sprite-lighting {
   width: 10px;
   height: 15px;
-  background-position: -171px -5px;
+  background-position: -93px -60px;
 }
+
 .sprite-like {
-  width: 10px;
-  height: 11px;
-  background-position: -35px -33px;
+  width: 12px;
+  height: 12px;
+  background-position: -115px -86px;
 }
+
 .sprite-list {
   width: 18px;
   height: 14px;
-  background-position: -169px -87px;
+  background-position: -137px -86px;
 }
+
 .sprite-logo {
   width: 188px;
   height: 42px;
-  background-position: -5px -117px;
+  background-position: -5px -116px;
 }
+
 .sprite-logo-footer {
   width: 143px;
   height: 32px;
-  background-position: -5px -169px;
+  background-position: -5px -168px;
 }
+
 .sprite-play {
   width: 24px;
   height: 24px;
-  background-position: -158px -169px;
+  background-position: -158px -168px;
 }
+
 .sprite-play_white_big {
   width: 96px;
   height: 96px;
-  background-position: -221px -5px;
+  background-position: -222px -5px;
 }
+
 .sprite-play_white_small {
   width: 48px;
   height: 48px;
   background-position: -203px -111px;
 }
+
 .sprite-search {
   width: 16px;
   height: 15px;
   background-position: -261px -111px;
 }
+
 .sprite-society {
   width: 20px;
   height: 20px;
   background-position: -287px -111px;
 }
+
 .sprite-twitter {
   width: 10px;
-  height: 10px;
+  height: 8px;
   background-position: -311px -105px;
 }
+
 .sprite-zing {
   width: 8px;
   height: 9px;
-  background-position: -311px -125px;
+  background-position: -310px -122.5px;
 }
 
 .d-flex {
@@ -391,7 +438,7 @@ img {
 }
 .main__news-category {
   margin-bottom: 10px;
-  font: 500 11px/16px Roboto;
+  font: 500 11px/16px RobotoM;
   letter-spacing: calc(11px * 0.03);
   color: #147ade;
   text-transform: uppercase;
@@ -400,7 +447,7 @@ img {
   margin-bottom: 7px;
 }
 .main__hc-news-title {
-  font: 700 16px/20px Roboto;
+  font: 700 16px/20px RobotoB;
   color: #121212;
 }
 .main__hot-news-aside .main__hc-news-title {
@@ -611,7 +658,7 @@ img {
 }
 .main__mr-news-item a,
 .main__mr-news-item span {
-  font: 500 14px/19px Roboto;
+  font: 500 14px/19px RobotoM;
 }
 .main__mr-item-no {
   color: #147ade;
@@ -631,7 +678,7 @@ img {
   margin: 24px auto 0 auto;
   padding: 7px 13px;
   border-radius: 4px;
-  font: 500 14px/19px Roboto;
+  font: 500 14px/19px RobotoM;
   color: #ffffff;
   background-color: #147ade;
 }
@@ -726,6 +773,7 @@ img {
 .footer__devide {
   height: 1px;
   background-color: #f9f9f9;
+  opacity: 10%;
 }
 .footer__main-flex {
   padding: 30px 0px;

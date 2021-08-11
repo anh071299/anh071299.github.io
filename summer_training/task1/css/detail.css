@@ -13,16 +13,17 @@
   margin-bottom: 12px;
 }
 .main__detail-blog-meta a {
-  margin: 0px 12px 0px 0px;
+  margin: 4px 12px 4px 0px;
 }
-.main__detail-blog-time {
-  font: 13px/24px Roboto;
+.main__post-time {
+  font: 400 13px/24px Roboto;
+  margin-left: 5px;
 }
 .main__detail-blog-icon {
-  margin-right: 5px;
+  margin-top: 4px;
 }
 .main__detail-blog-summary {
-  font: 500 19px/27px Roboto;
+  font: 500 19px/27px RobotoM;
   color: #333333;
   margin-bottom: 15px;
 }
@@ -33,6 +34,8 @@
   margin-right: 15px;
 }
 .main__btn-share {
+  display: inline-flex;
+  align-items: center;
   padding: 2px 12px;
   border-radius: 3px;
   font: 13px/16px SF;
@@ -41,12 +44,6 @@
 }
 .main__btn-share-icon {
   margin-right: 7px;
-}
-i.sprite-facebook {
-  width: 14px;
-  height: 14px;
-  background-color: #ffffff;
-  border-radius: 50%;
 }
 .main__detail-blog-related {
   padding: 16px 0px;
@@ -57,7 +54,7 @@ i.sprite-facebook {
   margin-bottom: 12px;
 }
 .main__detail-blog-related ol li a {
-  font: 700 16px/22px Roboto;
+  font: 700 16px/22px RobotoB;
   color: #454545;
 }
 .main__detail-blog-related ol li a::before {
@@ -69,7 +66,7 @@ i.sprite-facebook {
   background-color: #1878f3;
 }
 .main__detail-blog-content p {
-  font: 400 16px/30px NSR;
+  font: 400 17px/30px NSR;
 }
 .main__detail-blog-content p {
   margin: 17px 0px;
@@ -84,7 +81,7 @@ i.sprite-facebook {
 .main__detail-blog-author{
     display: block;
     text-align: right;
-    font: 700 16px/22px Roboto;
+    font: 700 16px/22px RobotoB;
     color: #121212;
 }
 .main__detail-blog-social .main__detail-blog-share{
