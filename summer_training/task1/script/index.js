@@ -7,7 +7,6 @@ $(window).mouseup(function (e) {
     {
         menuToggle.removeClass('is-active');
     }
- 
 });
 toggle.on('click', () => {
     menuToggle.toggleClass('is-active');
