@@ -34,13 +34,20 @@
   margin-right: 15px;
 }
 .main__btn-share {
-  display: inline-flex;
-  align-items: center;
   padding: 2px 12px;
   border-radius: 3px;
   font: 700 13px/16px SFB;
   color: #ffffff;
   background-color: #1878f3;
+}
+.main__detail-blog-share a:first-child i{
+  font-size: 11px;
+}
+.main__detail-blog-share a:last-child i{
+  font-size: 14px;
+}
+.main__detail-blog-share a i{
+  margin-right: 7px;
 }
 .main__btn-share-icon {
   margin-right: 7px;
@@ -117,4 +124,7 @@
   font: 500 14px/19px RobotoM;
   color: #454545;
   display: inline-block;
+}
+.main__figure-img figcaption{
+  font: 500 14px/19px RobotoM; 
 }
