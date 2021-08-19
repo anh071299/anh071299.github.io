@@ -113,3 +113,8 @@
 .main__detail-blog-new-listing{
     margin-bottom: 30px;
 }
+.main__detail-blog-keywords a, .main__detail-blog-keywords b{
+  font: 500 14px/19px RobotoM;
+  color: #454545;
+  display: inline-block;
+}
