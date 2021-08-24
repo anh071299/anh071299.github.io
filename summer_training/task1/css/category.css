@@ -13,3 +13,6 @@
 .main__hc-news-title{
     font: 500 16px/22px RobotoM;
 }
+h3 a.main__category-title-name{
+    line-height: 25px;
+}

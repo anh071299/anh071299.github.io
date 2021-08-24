@@ -429,7 +429,7 @@ img {
   border-bottom: 1px solid #e0e0e0;
 }
 .header__cat-item-name {
-  font: 600 14/17px SFSB;
+  font: 600 14px/17px SFSB;
   color: #147ade;
   text-transform: uppercase;
   margin-bottom: 9px;
@@ -456,6 +456,7 @@ img {
 }
 .header__media-icon {
   margin-right: 8px;
+  display: flex;
 }
 .header__navbar-search a {
   display: flex;
@@ -617,9 +618,15 @@ img {
   padding: 12px 0px;
   justify-content: space-between;
 }
-.main__category-title-name {
-  font: 700 18px/25px RobotoB;
+.main__category-title-name  {
+  font: 700 18px/20px RobotoB;
   color: #147ade;
+ 
+}
+.main__category-title-name span:not(:first-child){
+  margin-top: 0.160px;
+}
+.main__category-title-name {
   margin-bottom: 12px;
 }
 .main__category-title-wrap .main__category-title-name {
@@ -628,7 +635,7 @@ img {
 .main__category-title-nav li a {
   padding: 0px 12px;
   color: #454545;
-  font: 400 11px/16px Roboto;
+  font: 500 11px/16px RobotoM;
 }
 .main__category-title-nav li:not(:last-child) a {
   border-right: 1px solid #e6e6e6;
@@ -734,7 +741,7 @@ img {
   padding: 12px 0px 30px 0px;
   margin: 30px 0px 28px 0px;
 }
-.main__video-title {
+.main__video-wrap-title {
   font: 700 24px/32px RobotoB;
   color: #147ade;
   margin-bottom: 16px;
@@ -813,7 +820,7 @@ img {
 .footer,
 .footer a {
   background-color: #095aaa;
-  color: #ffffff;
+  color: #E6E6E6;
 }
 .footer__devide {
   height: 1px;
@@ -840,5 +847,5 @@ img {
   font: 400 13px/24px Roboto;
 }
 .footer__company-info span {
-  font-weight: 700;
+  font-family: RobotoB;
 }
