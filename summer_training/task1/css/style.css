@@ -637,8 +637,9 @@ img {
   color: #454545;
   font: 500 11px/16px RobotoM;
 }
-.main__category-title-nav li:not(:last-child) a {
+.main__category-title-nav li:nth-child(2) a {
   border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
 }
 .main__grid-3-cols {
   border-bottom: 3px solid #147ade;
