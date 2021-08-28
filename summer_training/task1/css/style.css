@@ -139,6 +139,7 @@ a {
 img {
   display: block;
 }
+
 .main__right-divide{
  padding-top: 30px;
   background-color: #FFFFFF;
@@ -637,9 +638,15 @@ img {
   color: #454545;
   font: 500 11px/16px RobotoM;
 }
-.main__category-title-nav li:nth-child(2) a {
+.main__category-title-nav li:not(:last-child) a {
   border-right: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
+}
+
+.main__category-list-news ul.main__category-title-nav  li:last-child a{
+  padding: 0px;
+}
+.main__category-list-news ul.main__category-title-nav  li:nth-child(3) a{
+  border-right: 0px;
 }
 .main__grid-3-cols {
   border-bottom: 3px solid #147ade;
@@ -743,7 +750,7 @@ img {
   margin: 30px 0px 28px 0px;
 }
 .main__video-wrap-title {
-  font: 700 24px/32px RobotoB;
+  font: 700 24px/32px NSB;
   color: #147ade;
   margin-bottom: 16px;
   margin-top: 6px;

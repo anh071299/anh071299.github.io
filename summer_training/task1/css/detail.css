@@ -12,15 +12,12 @@
 .main__detail-blog-meta {
   margin-bottom: 12px;
 }
-.main__detail-blog-meta a {
-  margin: 4px 12px 4px 0px;
-}
 .main__post-time {
   font: 400 13px/24px Roboto;
-  margin-left: 5px;
 }
 .main__detail-blog-icon {
   display: inline-flex;
+  margin: 0px 5px 0px 12px;
 }
 .main__detail-blog-summary {
   font: 500 19px/27px RobotoM;
@@ -95,6 +92,9 @@
     margin-bottom: 0px;
     padding-right: 20px;
 }
+.main__detail-blog-meta{
+  align-items: center;
+}
 .main__detail-blog-list-social{
   border-left: 1px solid #E6E6E6;
   padding-left: 20px;
@@ -150,4 +150,7 @@
 }
 .main__category-title-wrap{
   padding: 17px 0px;
+}
+.main__detail-blog-meta .main__news-category{
+ margin-bottom: 0px;
 }
