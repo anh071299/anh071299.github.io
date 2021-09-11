@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Gotham HTF";
+  src: url("../font/GothamHTF-Bold.eot");
+  src: url("../font/GothamHTF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/GothamHTF-Bold.woff2") format("woff2"),
+    url("../font/GothamHTF-Bold.woff") format("woff"),
+    url("../font/GothamHTF-Bold.ttf") format("truetype"),
+    url("../font/GothamHTF-Bold.svg#GothamHTF-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham HTF Book";
+  src: url("../font/GothamHTF-Book.eot");
+  src: url("../font/GothamHTF-Book.eot?#iefix") format("embedded-opentype"),
+    url("../font/GothamHTF-Book.woff2") format("woff2"),
+    url("../font/GothamHTF-Book.woff") format("woff"),
+    url("../font/GothamHTF-Book.ttf") format("truetype"),
+    url("../font/GothamHTF-Book.svg#GothamHTF-Book") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+.container-fluid {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Gotham HTF Book";
+  color: rgb(0, 0, 0);
+}
+h1,
+h2,
+h3,
+h4,h5,
+.sub-heading {
+  font-family: "Gotham HTF";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h4 {
+  font: 17.3px/57px Gotham HTF Book;
+  color: rgb(0, 0, 0);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul,
+li {
+  list-style: none;
+}
+.col-lg-6 {
+  width: 50%;
+}
+.group-5-cols-item {
+  width: 20%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec-text-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 17;
+}
+.header-hero-img {
+  background: url(../img/header.png) no-repeat;
+  height: 855px;
+  margin-bottom: 30px;
+}
+.sec-hero-img {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.header-verticle-menu {
+  position: absolute;
+  left: 54px;
+  top: 168px;
+  z-index: 11;
+}
+.header-verticle-menu li a {
+  font-size: 14.3px;
+  text-transform: uppercase;
+  line-height: 47.1px;
+}
+.sec-hero-img h1 {
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+}
+.main-intro-block-img {
+  height: 723px;
+}
+.main-introduce-block .main-intro-block-items:first-child > a > div {
+  background-image: url(../img/main1.png);
+}
+.main-introduce-block .main-intro-block-items:last-child > a > div {
+  background-image: url(../img/main2.png);
+}
+.main-intro-block-items a {
+  color: rgb(254, 254, 254);
+}
+.main-intro-block-items h3 {
+  font-size: 50px;
+  line-height: 0.64;
+}
+.main-intro-block-items h2 {
+  font-size: 60px;
+  line-height: 0.533;
+  margin-bottom: 10px;
+}
+.main-intro-block-items span {
+  font-size: 30px;
+  line-height: 1.067;
+}
+.main-tag-bottom {
+  text-align: center;
+  padding: 9px 0px;
+}
+.group-5-cols-item > a.sec-hero-img {
+  display: block;
+  height: 286px;
+}
+.footer-pictures .group-5-cols-item:nth-child(1) > a {
+  background-image: url(../img/footer-img1.png);
+}
+.footer-pictures .group-5-cols-item:nth-child(2) > a {
+  background-image: url(../img/footer-img2.png);
+}
+.footer-pictures .group-5-cols-item:nth-child(3) > a {
+  background-image: url(../img/footer-img3.png);
+}
+.footer-pictures .group-5-cols-item:nth-child(4) > a {
+  background-image: url(../img/footer-img4.png);
+}
+.footer-pictures .group-5-cols-item:nth-child(5) > a {
+  background-image: url(../img/footer-img5.png);
+}
+.footer-container {
+  padding-left: 92px;
+  padding-right: 92px;
+}
+.footer-newletter {
+  padding-top: 40px;
+}
+.footer-subcribe{
+    width: 87%;
+}
+.footer-customer-care{
+    width: 13%;
+}
+.footer-newletter .sub-heading {
+  font-size: 18.3px;
+  line-height: 56.88px;
+}
+.footer-input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer-input {
+  border: 1px solid rgb(22, 22, 22);
+  background-color: rgb(255, 255, 255);
+  width: 492px;
+  height: 50px;
+  margin-right: 5px;
+}
+.subcribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(254, 254, 254);
+}
+.customer-care-heading{
+    font-size: 17.3px;
+}
+.customer-care-list li a{
+    font-size: 12.3px;
+    line-height: 22px;
+}
+.footer-copy{
+    padding: 68px 0px;
+    text-align: center;
+}
+.footer-copy ul li{
+    display: inline-block;
+    font-size: 10.78px;
+}
+.footer-copy ul li span{
+    margin: 0px 8px;
+}
