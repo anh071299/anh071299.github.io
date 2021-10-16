@@ -1,0 +1,26 @@
+ul,li{
+    list-style: none;
+}
+.pokecards{
+    width: 65%;
+    margin: 0 auto;
+    .pokecard{
+        display: inline-block;
+        padding: 45px 0px;
+        background-color: #d3d3d3;
+        font-weight: 700;
+        min-width: calc(65% / 3);
+        text-align: center;
+        border-radius: 10px;
+        margin: 20px;
+        &__name{
+            color: #0000ff;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        &__type{
+            color: black;
+            font-size: 16px;
+       }
+    }
+}
