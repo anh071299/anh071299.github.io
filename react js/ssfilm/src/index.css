@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: Nunito,sans-serif;
+}
+.container{
+  max-width: 1111px;
+  padding: 0px;
+}
+.logo-small{
+  position: relative;
+  z-index: 1;
+  height: 28px;
+  margin-left: 10px;
+}
+.logo{
+  width: auto;
+  height: 30px;
+}

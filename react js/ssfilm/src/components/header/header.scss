@@ -1,0 +1,22 @@
+#header {
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        height: 80px;
+        background-color: #0c2738;
+
+        a.nav-link {
+            position: relative;
+            margin-left: 45px;
+            display: inline-block;
+            border-bottom: 2px solid transparent;
+            transition: color .2s, border .2s;
+            color: #899ead;
+            font-size: 17px;
+            font-weight: 600; 
+            text-align: left;
+
+        }
+    }
+}
